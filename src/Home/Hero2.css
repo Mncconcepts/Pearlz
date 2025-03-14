@@ -1,0 +1,547 @@
+:root {
+  --primary-color: #4caf50;
+  --secondary-color: #99d9dd3a;
+  --text-color: #333;
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.shop-categories h2 {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  margin-top: 8rem;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.category-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.category-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.category-item {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.category-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-item p {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+.category-item:hover img {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.category-item:hover p {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.category-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.3s ease;
+  border-radius: 8px;
+}
+
+.category-item:hover::before {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.category-item p {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+
+.hero-banner {
+  position: relative;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.hero-banner img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1rem;
+}
+
+.btn {
+  background: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #388e3c;
+}
+
+.popular-products h2 {
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product-item {
+  background: var(--secondary-color);
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  width: 200px;
+}
+
+.product-item img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.product-item p {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.product-item span {
+  color: var(--primary-color);
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.product-item button {
+  background: var(--primary-color);
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.product-item button:hover {
+  background: #388e3c;
+}
+
+.promotions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin: 40px 0;
+}
+
+.promo-item {
+  background: var(--primary-color);
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+.promo-item img {
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.best-deals h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  margin-top: 5rem;
+}
+
+.custom-skincare {
+  text-align: center;
+  padding: 40px;
+  background: var(--secondary-color);
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+.custom-skincare h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.custom-skincare button:hover {
+  background: #388e3c;
+  color: #fff;
+}
+
+.custom-skincare p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .categories {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .hero-text {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 0.9rem;
+  }
+
+  .product-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .promotions {
+    grid-template-columns: 1fr;
+  }
+
+  .product-item {
+    width: 90%;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .shop-categories h2,
+  .popular-products h2,
+  .best-deals h2 {
+    font-size: 2rem;
+  }
+
+  .category-item img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .hero-banner img {
+    max-height: 300px;
+  }
+
+  .hero-text {
+    padding: 10px;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-text p {
+    font-size: 0.8rem;
+  }
+
+  .product-item {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .promo-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .custom-skincare {
+    padding: 20px;
+  }
+
+  .custom-skincare h2 {
+    font-size: 1.5rem;
+  }
+
+  .custom-skincare p {
+    font-size: 0.9rem;
+  }
+}
+
+.popup-card {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 320px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.952);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.171);
+  color: #030303;
+  text-align: center;
+  z-index: 1000;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.popup-card h2 {
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+
+.popup-card p {
+  margin: 5px 0 15px;
+  font-size: 1.1rem;
+}
+
+.popup-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.popup-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.popup-btn {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.popup-btn.view-cart {
+  background: #4caf50;
+  color: #fff;
+}
+
+.popup-btn.view-cart:hover {
+  background: #45a049;
+}
+
+.popup-btn.back {
+  background: #566797;
+  color: #fff;
+}
+
+.popup-btn.back:hover {
+  background: #566797;
+}
+
+.popup-card::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(250, 250, 250, 0.959);
+  z-index: -1;
+}
+
+.custom-image {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #f9f9f9;
+  border-radius: 16px;
+  margin-bottom: 40px;
+  gap: 20px;
+  margin-top: 4rem;
+}
+
+.custom-image.reverse {
+  flex-direction: row-reverse;
+}
+
+.custom-image img {
+  width: 40%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.custom-image div {
+  width: 50%;
+}
+
+.custom-image h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.custom-image p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.btn {
+  background-color: #388e3c;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #388e3c;
+  color: #fff;
+}
+
+
+.contact-form {
+  background: url(/hero2.jpg);
+  border-radius: 16px;
+  margin-bottom: 40px;
+  gap: 40px;
+}
+
+.contact-form h2 {
+  color: #333;
+  font-size: 2.6rem;
+}
+
+.contact-form p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Form Styling */
+.contact-form form input,
+.contact-form form textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 16px;
+}
+
+.contact-form form input:focus,
+.contact-form form textarea:focus {
+  outline: none;
+  border-color: #388e3c;
+  box-shadow: 0 0 5px rgba(255, 127, 80, 0.5);
+}
+
+.btn {
+  background-color: #388e3c;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #2fb436;
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .custom-image {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .custom-image img,
+  .custom-image div {
+    width: 100%;
+  }
+
+  .custom-image div {
+    text-align: center;
+  }
+
+  .contact-form {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-form div {
+    width: 100%;
+  }
+
+  .contact-form .get {
+    width: 100%;
+  }
+}

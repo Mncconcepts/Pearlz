@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Vitamin C Serum",
+    "price": 3.87,
+    "oldPrice": 5.41,
+    "tag": "-20%",
+    "img": "/phase1.png"
+  },
+  {
+    "id": 2,
+    "name": "Hyaluronic Acid Moisturizer",
+    "price": 12.5,
+    "oldPrice": 15.0,
+    "tag": "New",
+    "img": "/phase2.png"
+  },
+  {
+    "id": 3,
+    "name": "Retinol Night Cream",
+    "price": 2.79,
+    "oldPrice": 3.45,
+    "tag": "New",
+    "img": "/phase3.png"
+  },
+  {
+    "id": 4,
+    "name": "Aloe Vera Soothing Gel",
+    "price": 5.46,
+    "oldPrice": 6.83,
+    "tag": "-15%",
+    "img": "/phase4.png"
+  },
+  {
+    "id": 5,
+    "name": "Boosting Serum",
+    "price": 8.88,
+    "oldPrice": 12.35,
+    "tag": "-20%",
+    "img": "/phase5.png"
+  },
+  {
+    "id": 6,
+    "name": "Brightening Toner",
+    "price": 10.2,
+    "oldPrice": 12.45,
+    "tag": "New",
+    "img": "/phase6.png"
+  },
+  {
+    "id": 7,
+    "name": "Tea Tree Acne Solution",
+    "price": 9.34,
+    "oldPrice": 10.98,
+    "tag": "-15%",
+    "img": "/phase7.png"
+  },
+  {
+    "id": 8,
+    "name": "SPF 50 Sunscreen Lotion",
+    "price": 9.68,
+    "oldPrice": 11.43,
+    "tag": "-20%",
+    "img": "/phase8.png"
+  },
+  {
+    "id": 9,
+    "name": "Charcoal Detox Face Mask",
+    "price": 14.99,
+    "oldPrice": 18.99,
+    "tag": "-15%",
+    "img": "/phase9.png"
+  },
+  {
+    "id": 10,
+    "name": "Rose Water Hydrating Mist",
+    "price": 7.5,
+    "oldPrice": 9.5,
+    "tag": "New",
+    "img": "/phase10.png"
+  },
+  {
+    "id": 11,
+    "name": "Exfoliating Sugar Scrub",
+    "price": 6.99,
+    "oldPrice": 8.99,
+    "tag": "-20%",
+    "img": "/phase11.png"
+  },
+  {
+    "id": 12,
+    "name": "Coconut & Shea Body Butter",
+    "price": 15.0,
+    "oldPrice": 19.99,
+    "tag": "-25%",
+    "img": "/phase12.png"
+  }
+]

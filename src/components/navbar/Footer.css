@@ -1,0 +1,128 @@
+:root {
+    --primary-color: #4caf50;
+    --secondary-color: #99d9dd3a;
+    --footer-bg: #111111e0;
+    --text-light: #f1f1f1;
+    --text-muted: #ffffff;
+    --hover-color: #4caf50;
+}
+
+.footer-top {
+    background: var(--footer-bg);
+    color: var(--text-light);
+    padding: 50px 0;
+    margin-top: 8rem;
+}
+
+.footer-item h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.footer-item p {
+    font-size: 1.3rem;
+    color: var(--text-muted);
+}
+
+.footer-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-item ul li {
+    margin-bottom: 10px;
+}
+
+.footer-item ul li a {
+    color: var(--text-light);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-item ul li a:hover {
+    color: var(--hover-color);
+}
+
+.footer-item ul.lab-ul {
+    padding-left: 0;
+}
+
+.social-iconss {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-iconss li {
+    display: inline-block;
+}
+
+.social-iconss a {
+    color: var(--text-light);
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.social-iconss a:hover {
+    color: var(--hover-color);
+}
+
+.footer-bottom {
+    background: #0d0d0d;
+    color: var(--text-muted);
+    text-align: start;
+    padding: 15px 0;
+    font-size: 0.9rem;
+}
+
+.footer-bottom a {
+    color: var(--text-light);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+    color: var(--hover-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-top .row {
+        text-align: start;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-item h4 {
+        font-size: 1.2rem;
+    }
+
+    .footer-item p {
+        font-size: 0.9rem;
+    }
+
+    .footer-bottom {
+        font-size: 0.8rem;
+    }
+}
+
+/* Media query for small extra small screens */
+@media (max-width: 576px) {
+    .social-icons {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .social-icons li {
+        display: inline-block;
+    }
+
+    .social-icons a {
+        font-size: 1.5rem;
+    }
+}

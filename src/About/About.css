@@ -1,0 +1,314 @@
+.aboutt-container {
+    color: #333;
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+}
+
+.heroe-section {
+    text-align: center;
+    padding: 100px 20px;
+    background: #fdfdfd;
+    margin-top: 2rem;
+    background: url('/cover3.png') center/cover;
+}
+
+.heroe-section h1 {
+    font-size: 3rem;
+}
+
+.heroe-section p {
+    font-size: 1rem;
+    color: #777;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 50px 20px;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.text-container {
+    max-width: 600px;
+
+}
+
+.text-container h3 {
+    color: #c0392b;
+    font-size: 1.2rem;
+}
+
+.text-container h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.statss {
+    display: flex;
+    gap: 20px;
+}
+
+.stat-box {
+    background: #299eb3;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.why-choose-us {
+    text-align: center;
+    padding: 50px 20px;
+    background: #fff;
+    margin-top: 4rem;
+}
+
+.why-choose-us span p {
+    padding: 30px;
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.feature-box {
+    background: #299eb3;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.experience {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #8e44ad;
+}
+
+.explore-btn {
+    background: #067430;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+.reviews {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 50px 20px;
+}
+
+.review-images img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.newsletter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 90px 20px;
+    background: #fdfdfd;
+}
+
+.newsletter-card {
+    max-width: 500px;
+    text-align: center;
+    padding: 30px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.newsletter-card h3 {
+    font-size: 1rem;
+    color: #ff758c;
+    text-transform: uppercase;
+}
+
+.newsletter-card h2 {
+    font-size: 2rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+.newsletter-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.newsletter-form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.newsletter-form button {
+    background: #067430;
+    color: white;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.newsletter-form button:hover {
+    background: #ff4f72;
+}
+
+@media (max-width: 768px) {
+
+    .about-content,
+    .reviews {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .statss {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .aboutt-container h1 {
+        font-weight: bold;
+    }
+
+    .about-content,
+    .reviews {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .statss {
+        flex-direction: column;
+    }
+
+    .text-container span p {
+        text-align: center;
+        text-align: justify;
+        font-size: small;
+    }
+    .text-container p{
+        font-size: small;
+    }
+    .text-container span p{
+        text-align: center;
+        text-align: justify;
+    }
+
+    .text-container h2 {
+        font-weight: bold;
+    }
+
+    .why-choose-us h3 {
+        font-weight: bold;
+    }
+
+    .why-choose-us span p {
+        font-size: small;
+    }
+
+    .newsletter-card {
+        max-width: 100%;
+        padding: 40px 30px;
+    }
+
+    .newsletter-card h2 {
+        font-size: 1.5rem;
+    }
+    .newsletter-card p {
+        font-size: small;
+    }
+
+}
+.popupp-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popupp-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    width: 300px;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.checkmarkk {
+    font-size: 40px;
+    color: #ffffff;
+    opacity: 0;
+    animation: tickAnimation 1s ease-in-out 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes tickAnimation {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "name": "Vitamin C Serum",
+    "price": 3.87,
+    "oldPrice": 5.41,
+    "tag": "-20%",
+    "img": "/phase1.png",
+    "description": "A powerful antioxidant serum that brightens skin, fades dark spots, and boosts collagen production for a youthful glow."
+  },
+  {
+    "id": 2,
+    "name": "Hyaluronic Moisturizer",
+    "price": 12.5,
+    "oldPrice": 15.0,
+    "tag": "New",
+    "img": "/phase2.png",
+    "description": "An ultra-hydrating moisturizer infused with hyaluronic acid to deeply nourish, plump, and restore skin moisture balance."
+  },
+  {
+    "id": 3,
+    "name": "Retinol Night Cream",
+    "price": 2.79,
+    "oldPrice": 3.45,
+    "tag": "New",
+    "img": "/phase3.png",
+    "description": "A nighttime renewal cream enriched with retinol to reduce fine lines, improve skin texture, and boost cell regeneration."
+  },
+  {
+    "id": 4,
+    "name": "Aloe Vera Soothing Gel",
+    "price": 5.46,
+    "oldPrice": 6.83,
+    "tag": "-15%",
+    "img": "/phase4.png",
+    "description": "A lightweight, cooling gel that calms irritation, hydrates deeply, and repairs sun-damaged or sensitive skin."
+  },
+  {
+    "id": 5,
+    "name": "Boosting Serum",
+    "price": 8.88,
+    "oldPrice": 12.35,
+    "tag": "-20%",
+    "img": "/phase5.png",
+    "description": "A rejuvenating serum packed with collagen peptides to enhance skin elasticity and reduce the appearance of wrinkles."
+  },
+  {
+    "id": 6,
+    "name": "Brightening Toner",
+    "price": 10.2,
+    "oldPrice": 12.45,
+    "tag": "New",
+    "img": "/phase6.png",
+    "description": "A gentle toner formulated with brightening agents like niacinamide to even out skin tone and minimize dark spots."
+  },
+  {
+    "id": 7,
+    "name": "Tea Tree Acne Solution",
+    "price": 9.34,
+    "oldPrice": 10.98,
+    "tag": "-15%",
+    "img": "/phase7.png",
+    "description": "A clarifying solution infused with tea tree oil to combat breakouts, reduce redness, and soothe inflamed skin."
+  },
+  {
+    "id": 8,
+    "name": "SPF 50 Sunscreen Lotion",
+    "price": 9.68,
+    "oldPrice": 11.43,
+    "tag": "-20%",
+    "img": "/phase8.png",
+    "description": "A lightweight, non-greasy sunscreen with SPF 50 to protect skin from harmful UV rays while keeping it hydrated."
+  },
+  {
+    "id": 9,
+    "name": "Charcoal Detox Face Mask",
+    "price": 14.99,
+    "oldPrice": 18.99,
+    "tag": "-15%",
+    "img": "/phase9.png",
+    "description": "A deep-cleansing face mask with activated charcoal to absorb excess oil, unclog pores, and detoxify skin."
+  },
+  {
+    "id": 10,
+    "name": "Rose Water Hydrating Mist",
+    "price": 7.5,
+    "oldPrice": 9.5,
+    "tag": "New",
+    "img": "/phase10.png",
+    "description": "A refreshing facial mist enriched with pure rose water to soothe, tone, and provide an instant boost of hydration."
+  },
+  {
+    "id": 11,
+    "name": "Exfoliating Sugar Scrub",
+    "price": 6.99,
+    "oldPrice": 8.99,
+    "tag": "-20%",
+    "img": "/phase11.png",
+    "description": "A gentle exfoliating scrub with sugar crystals to remove dead skin cells, leaving your skin soft, smooth, and radiant."
+  },
+  {
+    "id": 12,
+    "name": "Coconut & Shea Body Butter",
+    "price": 15.0,
+    "oldPrice": 19.99,
+    "tag": "-25%",
+    "img": "/phase12.png",
+    "description": "A rich, nourishing body butter infused with coconut oil and shea butter to deeply moisturize and soften dry skin."
+  }
+]

@@ -1,0 +1,91 @@
+.logout-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #f2f7f5, #f2fcf6);
+  }
+  
+  .logout-box {
+    background: #ffffff3f;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+    width: 100%;
+  }
+  
+  .logout-box h2 {
+    text-align: center;
+    font-size: 20px;
+    color: #2daa48;
+  }
+  
+  .logout-buttons {
+    margin-top: 20px;
+  }
+  
+  .logout-yes,
+  .logout-no {
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .logout-yes {
+    background-color: #5ea0d6;
+    color: white;
+    animation: glow 1.5s infinite ease-in-out;
+  }
+  
+  .logout-no {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  /* Glowing Animation */
+  /* @keyframes glow {
+    0% {
+      box-shadow: 0 0 5px #6da3cf70;
+    }
+    50% {
+      box-shadow: 0 0 20px #4c82afc7, 0 0 30px #4c82afaf;
+    }
+    100% {
+      box-shadow: 0 0 5px #649ac7af;
+    }
+  } */
+  
+  /* Hover Effects */
+  .logout-yes:hover {
+    background-color: #4c82af;
+    transform: scale(1.05);
+  }
+  
+  .logout-no:hover {
+    background-color: #4c82af;
+    transform: scale(1.05);
+  }
+  
+  .logout-button {
+    padding: 10px 20px;
+    background-color: #4c82af;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover Effect for Generic Button */
+  .logout-button:hover {
+    background-color: #4c82af;
+    transform: scale(1.05);
+  }
+  

@@ -1,0 +1,116 @@
+.welcomee-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.welcome-image {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 16px;
+    animation: slideIn 1s ease-out;
+    border-radius: 8rem;
+    margin-top: -9.5rem;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.welcome-text {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 24px;
+    max-width: 80%;
+    margin-bottom: 2rem;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.button-container {
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: slideUp 1s ease-out;
+}
+
+.welcome-button {
+    background-color: #4caf50;
+    color: white;
+    padding: 15px 0;
+    width: 80%;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 16px;
+    margin-top: 3rem;
+}
+
+.welcome-button:hover {
+    background-color: #458d47;
+}
+
+.welcome-skip {
+    color: rgb(2, 2, 2);
+    padding: 12px 0;
+    width: 80%;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 16px;
+    margin-top: 0.4rem;
+    margin-bottom: 2.5rem;
+}
+
+.dots-container {
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+}
+
+.dot.active {
+    background-color: #007bff;
+}
+@media (min-width: 1024px) {
+    .welcome-button,
+    .welcome-skip {
+        width: 50%;
+    }
+}
