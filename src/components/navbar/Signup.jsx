@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { FaGoogle } from "react-icons/fa";
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 
-const SignUp = () => {
+const Signup = () => {
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -77,7 +77,7 @@ const SignUp = () => {
         setIsCheckmarkVisible(false);
         navigate("/login");
       }, 2000);
-    }, 1500); // Wait 1.5 seconds for loader
+    }, 1500); 
   };
 
   const handleGoogleSignUp = () => {
@@ -174,4 +174,4 @@ const SignUp = () => {
     </div>
   );
 };
-export default SignUp;
+export default Signup;

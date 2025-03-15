@@ -29,7 +29,7 @@ import Welcome2 from './components/navbar/Welcome2.jsx';
 import Welcome3 from './components/navbar/Welcome3.jsx';
 import SingleShop from './components/navbar/SingleShop.jsx';
 import Shop from './components/navbar/Shop.jsx';
-import SignUp from './components/navbar/SignUp.jsx';
+import Signup from './components/navbar/Signup.jsx';
 
 
 
@@ -105,8 +105,8 @@ const router = createHashRouter([
     element: <Welcome3 />
   },
   {
-    path: "/signup",
-    element: <SignUp/>
+   path: "/signup",
+   element: <Signup/>
   },
   {
     path: "/login",
