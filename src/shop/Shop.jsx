@@ -8,9 +8,9 @@ const Shop = () => {
     const [currentPage, setCurrentPage] = useState(0);
     const [hoveredProduct, setHoveredProduct] = useState(null);
     const navigate = useNavigate();
-    const productsPerPage = 6; // Adjust as needed
+    const productsPerPage = 6;
 
-    // Fetch products from JSON
+
     useEffect(() => {
         fetch("/products.json")
             .then((response) => response.json())
@@ -18,7 +18,7 @@ const Shop = () => {
             .catch((error) => console.error("Error fetching products:", error));
     }, []);
 
-    // Paginate products
+
     const paginatedProducts = [];
     for (let i = 0; i < products.length; i += productsPerPage) {
         paginatedProducts.push(products.slice(i, i + productsPerPage));

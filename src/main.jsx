@@ -13,8 +13,7 @@ import {
 import Signup from './components/navbar/Signup.jsx';
 import Login from './components/navbar/Login.jsx';
 import Logout from './components/navbar/Logout.jsx';
-import Shop from './Shop/Shop.jsx';
-import SingleShop from './shop/SingleShop.jsx';
+import SingleShop from './Shop/SingleShop.jsx';
 import WelcomePage from './components/navbar/WelcomePage.jsx';
 import ForgotPassword from './components/navbar/ForgotPassword.jsx';
 import Home from './Home/Home.jsx';
@@ -30,6 +29,7 @@ import Loader from './components/navbar/Loader.jsx';
 import Profile from './components/navbar/Profile.jsx';
 import Welcome2 from './components/navbar/Welcome2.jsx';
 import Welcome3 from './components/navbar/Welcome3.jsx';
+import Shop from './Shop/Shop.jsx';
 
 
 
@@ -45,7 +45,7 @@ const router = createHashRouter([
       },
       {
         path: "/shop",
-        element: <Shop />
+        element: <Shop/>
       },
       {
         path: "/about",
