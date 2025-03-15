@@ -92,7 +92,7 @@ const Profile = () => {
     <div className="bd">
       {notification && (
         <div className="popuppp-notification">
-          <div className="popup-content">
+          <div className="popuppp-content">
             <div className="success-icon">
               <span>&#10003;</span>
             </div>

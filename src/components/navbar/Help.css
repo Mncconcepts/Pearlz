@@ -1,0 +1,278 @@
+.helps-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    overflow: hidden;
+    margin-top: 4rem;
+
+}
+
+.helps-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.helps-header h3 {
+    font-size: 2.5rem;
+    color: #444;
+    font-weight: bold;
+    margin-top: -2rem;
+}
+
+.helps-header p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.helps-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.helps-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #ffffff;
+    padding: 45px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.helps-card:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.helps-image img {
+    max-width: 250px;
+    border-radius: 5px;
+}
+
+.helps-content {
+    flex: 1;
+}
+
+.helps-content h4 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.helps-content p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+    font-weight: 300;
+    text-align: justify;
+    letter-spacing: -0.5px;
+}
+
+.helps-content button {
+    background-color: #444;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.helps-content button:hover {
+    background-color: #666;
+}
+
+@media (max-width: 768px) {
+    .helps-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .helps-card:nth-child(even) {
+        flex-direction: column;
+    }
+
+    .helps-image img {
+        max-width: 100%;
+    }
+}
+
+.ticket-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .ticket-card {
+    background: #ffffff;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  .ticket-card h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  
+  .ticket-card form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .ticket-card input,
+  .ticket-card textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: 0.3s;
+  }
+  
+  .ticket-card input:focus,
+  .ticket-card textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    outline: none;
+  }
+  
+  .ticket-card textarea {
+    min-height: 120px;
+    resize: vertical;
+  }
+  
+  .ticket-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  
+  .ticket-buttons button {
+    width: 48%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn-submit {
+    background: #28b847;
+    color: white;
+  }
+  
+  .btn-submit:hover {
+    background: #29a744;
+  }
+  
+  .btn-cancel {
+    background: #ffffff;
+    color: rgb(10, 10, 10);
+    text-decoration: underline;
+  }
+  
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+.success-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  .success-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    padding: 25px;
+    width: 320px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    transform: scale(0.9);
+    animation: popIn 0.3s ease-in-out forwards;
+  }
+  
+  .success-card h3 {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 15px;
+    font-weight: 600;
+  }
+  
+  .checkmark {
+    width: 80px;
+    height: 80px;
+    background-color: #4caf50;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    animation: bounceIn 0.5s ease-in-out;
+  }
+  
+  .checkmark svg {
+    width: 50px;
+    height: 50px;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    animation: drawCheck 0.6s forwards ease-in-out 0.5s;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes popIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+  
+  @keyframes bounceIn {
+    0% { transform: scale(0.3); opacity: 0; }
+    50% { transform: scale(1.05); opacity: 1; }
+    100% { transform: scale(1); }
+  }
+  
+  @keyframes drawCheck {
+    from { stroke-dashoffset: 48; }
+    to { stroke-dashoffset: 0; }
+  }
+    

@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./Services.css";
 import { Link } from "react-router-dom";
+import Help from "./Help";
 
 const services = [
   { number: "01", title: "Cosmetic Surgery", image: "second4.png" },
@@ -142,6 +143,7 @@ const Services = () => {
           </Link>
         </div>
       </section>
+      <Help/>
 
       {showPopup && (
         <div className="popup-overlay" onClick={togglePopup}>

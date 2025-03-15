@@ -332,31 +332,33 @@
   }
 }
 
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px); 
+  z-index: 999; 
+}
+
 .popup-card {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 320px;
+  width: 350px;
   padding: 20px;
-  background: rgba(255, 255, 255, 0.952);
+  background: rgba(61, 59, 59, 0.95);
   backdrop-filter: blur(12px);
   border-radius: 16px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.171);
-  color: #030303;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  color: #fff;
   text-align: center;
-  z-index: 1000;
+  z-index: 1000; 
   border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.popup-card h2 {
-  margin: 10px 0;
-  font-size: 1.5rem;
-}
-
-.popup-card p {
-  margin: 5px 0 15px;
-  font-size: 1.1rem;
 }
 
 .popup-image {
@@ -368,13 +370,15 @@
 
 .popup-actions {
   display: flex;
-  justify-content: space-between;
-  gap: 10px;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
 }
 
-.popup-btn {
-  flex: 1;
-  padding: 10px;
+.popup-btn.view-cart {
+  background: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -382,33 +386,23 @@
   transition: background 0.3s ease;
 }
 
-.popup-btn.view-cart {
-  background: #4caf50;
-  color: #fff;
-}
-
 .popup-btn.view-cart:hover {
   background: #45a049;
 }
 
 .popup-btn.back {
-  background: #566797;
-  color: #fff;
+  background-color: #f9f9f9;
+  color: #080808;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .popup-btn.back:hover {
-  background: #566797;
-}
+  text-decoration: none;
+  color: #fff;
 
-.popup-card::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(250, 250, 250, 0.959);
-  z-index: -1;
 }
 
 .custom-image {
@@ -484,7 +478,6 @@
   line-height: 1.6;
 }
 
-/* Form Styling */
 .contact-form form input,
 .contact-form form textarea {
   width: 100%;

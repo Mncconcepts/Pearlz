@@ -2,13 +2,15 @@
     padding: 50px 20px;
     overflow-y: auto;
     overflow-x: hidden;
+    margin-top: -2rem;
   }
   
   .faq-title {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 20px;
-    margin-top: 5rem;
+    margin-top: 4rem;
+    text-align: center;
   }
   
   .faq-container {
@@ -45,6 +47,16 @@
     display: none;
     margin-top: 10px;
     color: #272626;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0;
+  }
+  
+  .faq-item.active .faq-answer {
+    display: block;
+    max-height: 200px;
+    opacity: 1;
   }
   
   .contact-box {
@@ -115,7 +127,7 @@
   
   .popupp-content {
     background: white;
-    padding: 20px;
+    padding: 24px;
     border-radius: 10px;
     width: 400px;
     text-align: center;

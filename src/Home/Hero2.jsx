@@ -161,17 +161,17 @@ const Hero2 = () => {
       {/* Contact Form */}
 
       <section className="contact-form p-8">
-      <h2 className="text-3xl font-bold mb-4 text-center">Get In Touch</h2>
-      <form onSubmit={handleSubmit} className="max-w-lg mx-auto grid gap-4">
-        <input type="text" placeholder="Your Name" className="p-3 border rounded-lg" required />
-        <input type="email" placeholder="Your Email" className="p-3 border rounded-lg" required />
-        <textarea placeholder="Your Message" className="p-3 border rounded-lg" rows="5" required></textarea>
+        <h2 className="text-3xl font-bold mb-4 text-center">Get In Touch</h2>
+        <form onSubmit={handleSubmit} className="max-w-lg mx-auto grid gap-4">
+          <input type="text" placeholder="Your Name" className="p-3 border rounded-lg" required />
+          <input type="email" placeholder="Your Email" className="p-3 border rounded-lg" required />
+          <textarea placeholder="Your Message" className="p-3 border rounded-lg" rows="5" required></textarea>
 
-        <button type="submit" className="btn flex items-center justify-center">
-          {sending ? `Sending${dots}` : sent ? "Sent Successfully!" : "Send Message"}
-        </button>
-      </form>
-    </section>
+          <button type="submit" className="btn flex items-center justify-center">
+            {sending ? `Sending${dots}` : sent ? "Sent Successfully!" : "Send Message"}
+          </button>
+        </form>
+      </section>
 
       <div className="custom-skincare">
         <h2>Find the right product that norishes your skin</h2>
@@ -188,17 +188,20 @@ const Hero2 = () => {
 
       {/* Popup Card */}
       {popupProduct && (
-        <div className="popup-card">
-          <img src={popupProduct.image} alt={popupProduct.name} className="popup-image" />
-          <h2>{popupProduct.name}</h2>
-          <p>Price: {popupProduct.price}</p>
-          <div className="popup-actions">
-            <Link to='/shop'>
-              <button onClick={handleViewCart} className="popup-btn view-cart">View Shop Product</button>
-            </Link>
-            <button onClick={handleBack} className="popup-btn back">Back</button>
+        <>
+          <div className="popup-overlay" onClick={handleBack}></div>
+          <div className="popup-card">
+            <img src={popupProduct.image} alt={popupProduct.name} className="popup-image" />
+            <h2>{popupProduct.name}</h2>
+            <p>Price: {popupProduct.price}</p>
+            <div className="popup-actions">
+              <Link to="/shop">
+                <button onClick={handleViewCart} className="popup-btn view-cart">View Shop Product</button>
+              </Link>
+              <button onClick={handleBack} className="popup-btn back">Back</button>
+            </div>
           </div>
-        </div>
+        </>
       )}
     </div>
   );

@@ -30,6 +30,7 @@ import Welcome3 from './components/navbar/Welcome3.jsx';
 import SingleShop from './components/navbar/SingleShop.jsx';
 import Shop from './components/navbar/Shop.jsx';
 import Signup from './components/navbar/Signup.jsx';
+import Help from './components/navbar/Help.jsx';
 
 
 
@@ -86,7 +87,11 @@ const router = createHashRouter([
       {
         path: "/profile",
         element: <Profile />
-      }
+      },
+      {
+        path: "/help",
+        element: <Help/>
+      },
 
     ],
   },
