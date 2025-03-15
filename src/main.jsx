@@ -13,7 +13,6 @@ import {
 import Signup from './components/navbar/Signup.jsx';
 import Login from './components/navbar/Login.jsx';
 import Logout from './components/navbar/Logout.jsx';
-import SingleShop from './Shop/SingleShop.jsx';
 import WelcomePage from './components/navbar/WelcomePage.jsx';
 import ForgotPassword from './components/navbar/ForgotPassword.jsx';
 import Home from './Home/Home.jsx';
@@ -30,6 +29,7 @@ import Profile from './components/navbar/Profile.jsx';
 import Welcome2 from './components/navbar/Welcome2.jsx';
 import Welcome3 from './components/navbar/Welcome3.jsx';
 import Shop from './Shop/Shop.jsx';
+import SingleShop from './components/navbar/SingleShop.jsx';
 
 
 
@@ -41,53 +41,53 @@ const router = createHashRouter([
     children: [
       {
         path: "/home",
-        element: <Home/>
+        element: <Home />
       },
       {
         path: "/shop",
-        element: <Shop/>
+        element: <Shop />
       },
       {
         path: "/about",
-        element: <AboutUs/>
+        element: <AboutUs />
       },
       {
         path: "/singleshop",
-        element: <SingleShop />
+        element: <SingleShop/>
       },
       {
         path: "/services",
-        element: <Services/>
+        element: <Services />
       },
       {
         path: "/cartpage",
-        element: <CartPage/>
+        element: <CartPage />
       },
       {
         path: "/reviews",
-        element: <Reviews/>
+        element: <Reviews />
       },
       {
         path: "/faq",
-        element: <Faq/>
+        element: <Faq />
       },
       {
         path: "/blog",
-        element: <Blog/>
+        element: <Blog />
       },
       {
         path: "/singleblog",
-        element: <SingleBlog/>
+        element: <SingleBlog />
       },
       {
         path: "/contact",
-        element: <ContactUs/>
+        element: <ContactUs />
       },
       {
         path: "/profile",
-        element: <Profile/>
+        element: <Profile />
       }
-      
+
     ],
   },
 
@@ -98,11 +98,11 @@ const router = createHashRouter([
   },
   {
     path: "/welcome2",
-    element: <Welcome2/>
+    element: <Welcome2 />
   },
   {
     path: "/welcome3",
-    element: <Welcome3/>
+    element: <Welcome3 />
   },
   {
     path: "/signup",
@@ -122,7 +122,7 @@ const router = createHashRouter([
   },
   {
     path: "/loader",
-    element: <Loader/>
+    element: <Loader />
   },
 
 ]);

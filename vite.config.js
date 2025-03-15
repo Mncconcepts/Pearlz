@@ -6,10 +6,14 @@ export default defineConfig({
   server: {
     host: '0.0.0.0',
     port: 5173,
-    "@": "/src",
+  },
+  resolve: {
+    alias: {
+      "@": "/src",
+    },
   },
   build: {
-    outDir: 'dist', 
+    outDir: 'dist',
   },
-  base: process.env.NODE_ENV === 'production' ? '/your-repo-name/' : '/', 
+  base: '/',
 });
