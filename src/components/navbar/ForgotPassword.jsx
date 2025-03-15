@@ -31,7 +31,7 @@ const ForgotPassword = () => {
             return;
         }
 
-        setError(""); // Clear any previous errors
+        setError("");
         setIsLoading(true);
 
         // Simulate sending reset email
@@ -56,7 +56,7 @@ const ForgotPassword = () => {
                     </div>
                 ) : (
                     <div className="formm-content">
-                        <h1>Forgot Password</h1>
+                        <h1>Forgot Password ?</h1>
                         <p>No worries, enter your email and we'll send reset instructions.</p>
 
                         <form onSubmit={handleSubmit}>

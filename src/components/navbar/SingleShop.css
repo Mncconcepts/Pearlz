@@ -156,8 +156,9 @@
   }
   
   .pagination span {
+    background: #ffffff;
     font-size: 18px;
-    color: #312f2f;
+    color: #080808;
   }
 
 @media (max-width: 576px) {
@@ -320,7 +321,6 @@
     
 }
 
-/* Flying circle animation */
 .flying-circle {
     position: fixed;
     width: 40px;
@@ -333,7 +333,6 @@
     
 }
 
-/* Cart count badge */
 .cart-count-badge {
     position: absolute;
     top: -8px;
@@ -348,7 +347,6 @@
     margin-top: 0.7rem;
 }
 
-/* Ensure hidden cart icon has a position */
 .hidden-cart-icon {
     position: absolute;
     top: 0;
