@@ -29,7 +29,7 @@ import Profile from './components/navbar/Profile.jsx';
 import Welcome2 from './components/navbar/Welcome2.jsx';
 import Welcome3 from './components/navbar/Welcome3.jsx';
 import SingleShop from './components/navbar/SingleShop.jsx';
-import Shop from './Shop/Shop.jsx';
+import Shop from './components/navbar/Shop.jsx';
 
 
 
