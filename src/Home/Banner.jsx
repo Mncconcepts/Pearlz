@@ -1,7 +1,7 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
 import { motion } from "framer-motion";
-import "./Banner.css"; // Import CSS file
+import "./Banner.css";
 import { Link } from "react-router-dom";
 
 const Hero = () => {

@@ -28,8 +28,8 @@ import Loader from './components/navbar/Loader.jsx';
 import Profile from './components/navbar/Profile.jsx';
 import Welcome2 from './components/navbar/Welcome2.jsx';
 import Welcome3 from './components/navbar/Welcome3.jsx';
-import Shop from './Shop/Shop.jsx';
 import SingleShop from './components/navbar/SingleShop.jsx';
+import Shop from './Shop/Shop.jsx';
 
 
 
@@ -45,7 +45,7 @@ const router = createHashRouter([
       },
       {
         path: "/shop",
-        element: <Shop />
+        element: <Shop/>
       },
       {
         path: "/about",
