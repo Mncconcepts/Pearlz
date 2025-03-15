@@ -6,7 +6,7 @@
 
 .hero {
     text-align: center;
-    background: url('cover3.png') center/cover;
+    background: url('/cover3.png') center/cover;
     padding: 80px 20px;
     color: #1b1a1a;
     margin-top: 2rem;

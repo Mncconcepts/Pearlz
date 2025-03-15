@@ -26,7 +26,6 @@ const ContactUs = () => {
             <div className="banner">
                 <img src="/cover3.png" alt="Banner" />
                 <h1 className="contact-title">Contact</h1>
-                <span><p className="breadcrumb">Home &gt; Contact</p></span>
             </div>
 
             <div className="contact-content">
