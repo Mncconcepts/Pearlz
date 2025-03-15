@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { FaGoogle } from "react-icons/fa";
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 
-const Signup = () => {
+const SignUp = () => {
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -70,11 +70,11 @@ const Signup = () => {
     setIsLoading(true);
     setTimeout(() => {
       setIsLoading(false);
-      setIsCheckmarkVisible(true); // Show checkmark
+      setIsCheckmarkVisible(true);
 
-      // Redirect to login page after success animation
+    
       setTimeout(() => {
-        setIsCheckmarkVisible(false); // Hide checkmark
+        setIsCheckmarkVisible(false);
         navigate("/login");
       }, 2000);
     }, 1500); // Wait 1.5 seconds for loader
@@ -174,4 +174,4 @@ const Signup = () => {
     </div>
   );
 };
-export default Signup;
+export default SignUp;

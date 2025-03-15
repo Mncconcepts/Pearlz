@@ -10,7 +10,6 @@ import {
   HashRouter,
   RouterProvider,
 } from "react-router-dom";
-import Signup from './components/navbar/Signup.jsx';
 import Login from './components/navbar/Login.jsx';
 import Logout from './components/navbar/Logout.jsx';
 import WelcomePage from './components/navbar/WelcomePage.jsx';
@@ -30,6 +29,7 @@ import Welcome2 from './components/navbar/Welcome2.jsx';
 import Welcome3 from './components/navbar/Welcome3.jsx';
 import SingleShop from './components/navbar/SingleShop.jsx';
 import Shop from './components/navbar/Shop.jsx';
+import SignUp from './components/navbar/SignUp.jsx';
 
 
 
@@ -45,7 +45,7 @@ const router = createHashRouter([
       },
       {
         path: "/shop",
-        element: <Shop/>
+        element: <Shop />
       },
       {
         path: "/about",
@@ -53,7 +53,7 @@ const router = createHashRouter([
       },
       {
         path: "/singleshop",
-        element: <SingleShop/>
+        element: <SingleShop />
       },
       {
         path: "/services",
@@ -106,7 +106,7 @@ const router = createHashRouter([
   },
   {
     path: "/signup",
-    element: <Signup />
+    element: <SignUp/>
   },
   {
     path: "/login",

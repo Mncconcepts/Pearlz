@@ -4,7 +4,7 @@ import "./index.css";
 import Navbar from "./components/navbar/Navbar";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Signup from "./components/navbar/Signup";
+import Signup from "./components/navbar/SignUp";
 import Login from "./components/navbar/Login";
 import Footer from "./components/navbar/Footer";
 import WelcomePage from "./components/navbar/WelcomePage";
