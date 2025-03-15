@@ -64,7 +64,7 @@ const SignUp = () => {
     users.push(newUser);
     localStorage.setItem("users", JSON.stringify(users));
 
-    setError(""); // Clear previous error
+    setError("");
 
     // Display loader and success animation
     setIsLoading(true);
