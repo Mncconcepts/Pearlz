@@ -19,11 +19,16 @@
     margin-top: -9.5rem;
 }
 
+.back-arrow p{
+    font-weight: bolder;
+}
+
 @keyframes slideIn {
     from {
         transform: translateY(-100px);
         opacity: 0;
     }
+
     to {
         transform: translateY(0);
         opacity: 1;
@@ -43,6 +48,7 @@
         transform: translateY(50px);
         opacity: 0;
     }
+
     to {
         transform: translateY(0);
         opacity: 1;
@@ -108,7 +114,9 @@
 .dot.active {
     background-color: #007bff;
 }
+
 @media (min-width: 1024px) {
+
     .welcome-button,
     .welcome-skip {
         width: 50%;

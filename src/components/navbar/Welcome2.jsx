@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Typewriter from 'typewriter-effect';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import "./Welcome2.css";
 
 const Welcome2 = () => {
@@ -16,8 +18,18 @@ const Welcome2 = () => {
 
   return (
     <div className="welcomee-container">
+
+      <div className='back-arrow'
+        style={{ position: 'absolute', top: '20px', left: '20px', cursor: 'pointer', zIndex: 10 }}
+        onClick={() => navigate(-1)}
+      > <p style={{ cursor: 'pointer' }} onClick={() => navigate(-1)}>
+          ← Back
+        </p>
+        <FontAwesomeIcon icon={faArrowLeft} color="#fff" size="lg" />
+      </div>
+
       <motion.img
-        src="/welcome2.jpg"
+        src="/welcome3.jpg"
         alt="Skincare"
         className="welcome-image"
         initial={{ scale: 1, opacity: 2 }}
@@ -29,7 +41,6 @@ const Welcome2 = () => {
           ease: "linear"
         }}
       />
-
 
       {/* Typing effect text */}
       {showText && (

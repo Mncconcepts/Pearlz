@@ -49,7 +49,7 @@
   opacity: 0;
   animation:
     fadeIn 1s ease-out 3s forwards,
-    shakeWave 1.3s ease-in-out 4.2s forwards,
+    shakeWave 1s ease-in-out 4.2s forwards,
     zoomOut 1.5s ease-in 7s forwards;
   z-index: 3;
 }
