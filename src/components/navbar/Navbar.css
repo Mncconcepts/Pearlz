@@ -110,7 +110,7 @@
 
 .nav-icons {
     display: flex;
-    gap: 15px;
+    gap: 14px;
 }
 
 .nav-icons .icon {
@@ -187,20 +187,17 @@
 }
 
 .nav-icons .icon {
-    font-size: 18px;
+    font-size: 22px;
     cursor: pointer;
     width: 20px;
     height: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 70%;
-    background-color: rgba(255, 255, 255, 0.1);
     transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .nav-icons .icon:hover {
-    background-color: rgba(255, 255, 255, 0.2);
     transform: scale(1.1);
 }
 
@@ -270,7 +267,7 @@
         min-width: 18px;
         height: 18px;
         box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
-        margin-right: 23rem;
+        margin-right: 24rem;
     }
 }
 
@@ -291,7 +288,7 @@
         min-width: 18px;
         height: 18px;
         box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
-        margin-right: 23rem;
+        margin-right: 24rem;
     }
 
     .nav-icons {
@@ -464,4 +461,57 @@
 
 .nav-links li:nth-child(5) {
     --index: 5;
+}
+
+@media screen and (max-width: 863px) {
+    .navbar {
+        padding: 8px 15px;
+        justify-content: space-between;
+    }
+
+    .logo {
+        margin-left: 1rem;
+        font-size: 22px;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        order: 3;
+        font-size: 22px;
+    }
+
+    .nav-icons {
+        order: 2;
+        gap: 12px;
+    }
+
+    .nav-icons .icon {
+        width: 20px;
+        height: 20px;
+        font-size: 18px;
+    }
+
+    .joinn-btn-outline {
+        display: none;
+    }
+
+    .profile-icon {
+        margin-left: 0;
+    }
+
+    .mobile-menu.open {
+        left: 0;
+    }
+
+    .mobile-menu .social-icons {
+        display: flex;
+    }
+
+    .cart-badge {
+        margin-right: 20rem;
+    }
 }
