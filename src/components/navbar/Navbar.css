@@ -18,6 +18,26 @@
     margin-left: 3rem;
 }
 
+.profile-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    color: #257488;
+    cursor: pointer;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
 .nav-menu {
     flex: 1;
     display: flex;
@@ -104,7 +124,8 @@
     justify-content: center;
     margin-top: 20px;
 }
-.profile-icon{
+
+.profile-icon {
     margin-left: 0.2rem;
 }
 
@@ -164,6 +185,7 @@
 .mobile-menu .social-icons {
     display: flex;
 }
+
 .nav-icons .icon {
     font-size: 18px;
     cursor: pointer;
@@ -199,6 +221,7 @@
         color: #222;
 
     }
+
     .nav-icons .icon {
         width: 20px;
         height: 20px;
@@ -270,10 +293,18 @@
         box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
         margin-right: 23rem;
     }
+
     .nav-icons {
         display: flex;
         gap: 8px;
         margin-left: 2rem;
+    }
+
+    .profile-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
     }
 }
 

@@ -37,6 +37,7 @@
     height: 50px;
     border-radius: 50%;
     border: 3px solid #299eb3;
+    object-fit: cover;
   }
   
   .user-email {
@@ -183,6 +184,26 @@
     .main-content {
       width: 90%;
       padding: 15px;
+    }
+    .profile-img-large {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 3px solid #299eb3;
+      object-fit: cover;
+    }
+  }
+  @media (max-width: 480px) {
+    .main-content {
+      width: 90%;
+      padding: 15px;
+    }
+    .profile-img-large {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 3px solid #299eb3;
+      object-fit: cover;
     }
   }
   
