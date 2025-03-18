@@ -204,8 +204,8 @@ const Profile = () => {
                       placeholder="Enter a new password"
                     />
                   </div>
-                  <button type="submit" className="btn btn-success">Update details</button>  
-                  
+                  <button type="submit" className="btn btn-success">Update details</button>
+
                   <button
                     type="button"
                     className="btn btn-danger"

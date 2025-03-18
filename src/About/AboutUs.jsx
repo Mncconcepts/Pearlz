@@ -10,6 +10,7 @@ const About = () => {
     const statsRef = useRef(null);
     const observerRef = useRef(null);
     const [showPopup, setShowPopup] = useState(false);
+    const [showSuccessPopup, setShowSuccessPopup] = useState(false);
 
     useEffect(() => {
         observerRef.current = new IntersectionObserver(
@@ -52,6 +53,11 @@ const About = () => {
         e.preventDefault();
         setShowPopup(true);
         setTimeout(() => setShowPopup(false), 3000);
+        setShowSuccessPopup(true);
+
+        setTimeout(() => {
+            setShowSuccessPopup(false);
+        }, 3000);
     };
 
     return (
@@ -139,11 +145,17 @@ const About = () => {
                 </div>
             </section>
 
-            {showPopup && (
-                <div className="popupp-overlay">
-                    <div className="popupp-card">
-                        <h2>Subscription Successful</h2>
-                        <div className="checkmarkk">✔</div>
+            {/* Success Message Popup */}
+            {showSuccessPopup && (
+                <div className="success-modal">
+                    <div className="success-card">
+                        <div className="checkmark">
+                            <svg viewBox="0 0 52 52">
+                                <circle cx="26" cy="26" r="25" fill="none" />
+                                <path fill="none" stroke="white" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" d="M14 27l7 7 16-16" />
+                            </svg>
+                        </div>
+                        <h3>Message Sent Successfully!</h3>
                     </div>
                 </div>
             )}

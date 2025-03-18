@@ -21,6 +21,7 @@ const Navbar = () => {
     const [searchOpen, setSearchOpen] = useState(false);
     const [searchQuery, setSearchQuery] = useState("");
     const [searchResults, setSearchResults] = useState([]);
+    const [profileImage, setProfileImage] = useState(null);
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -28,8 +29,11 @@ const Navbar = () => {
             const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
             setCartCount(cartItems.length);
         };
+        const storedProfile = localStorage.getItem("profileImage");
+        if (storedProfile) {
+            setProfileImage(storedProfile);
+        }
 
-        // Initial load
         updateCartCount();
 
         // Listen for storage changes (when items are added)
@@ -160,18 +164,26 @@ const Navbar = () => {
                         </div>
                     )}
                 </div>
-
                 <div className="heart-icon" onClick={() => navigate("/cartpage")}>
                     <FaHeart className="icon" />
                     {cartCount > 0 && <span className="cart-count-badge">{cartCount}</span>}
                 </div>
                 <FaShoppingCart className="icon" onClick={() => navigate("/shop")} />
-                <div className="heart-icon" onClick={() => navigate("/cartpage")}>
-                    <FaHeart className="icon" />
-                    {cartCount > 0 && <span className="cart-count-badge">{cartCount}</span>}
-                </div>
                 <FaUser className="icon" onClick={() => navigate("/profile")} />
             </div>
+            {/* Profile Icon/Image */}
+            <div className="profile-icon" onClick={() => navigate("/profile")}>
+                    {profileImage ? (
+                        <img
+                            src={profileImage}
+                            alt="Profile"
+                            className="profile-img"
+                            style={{ width: "30px", height: "30px", borderRadius: "50%" }}
+                        />
+                    ) : (
+                        <FaUser className="icon" />
+                    )}
+                </div>
         </nav>
     );
 };

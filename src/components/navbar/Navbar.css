@@ -12,7 +12,7 @@
 }
 
 .logo {
-    font-size: 22px;
+    font-size: 26px;
     font-weight: bold;
     letter-spacing: 1px;
     margin-left: 3rem;
@@ -103,6 +103,9 @@
     gap: 10px;
     justify-content: center;
     margin-top: 20px;
+}
+.profile-icon{
+    margin-left: 0.2rem;
 }
 
 .social-icons a {
@@ -244,18 +247,33 @@
         min-width: 18px;
         height: 18px;
         box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
-        margin-right: 20rem;
+        margin-right: 23rem;
     }
 }
 
 @media screen and (max-width: 480px) {
     .cart-badge {
-        font-size: 9px;
-        min-width: 14px;
-        height: 14px;
-        margin-right: 10rem;
-        top: -4px;
-        right: -4px;
+        position: absolute;
+        top: -8px;
+        right: -8px;
+        background-color: red;
+        color: white;
+        border-radius: 50%;
+        padding: 2px 6px;
+        font-size: 12px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 18px;
+        height: 18px;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+        margin-right: 23rem;
+    }
+    .nav-icons {
+        display: flex;
+        gap: 8px;
+        margin-left: 2rem;
     }
 }
 
