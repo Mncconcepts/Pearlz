@@ -155,7 +155,7 @@ const About = () => {
                                 <path fill="none" stroke="white" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" d="M14 27l7 7 16-16" />
                             </svg>
                         </div>
-                        <h3>Message Sent Successfully!</h3>
+                        <h3>Subscription Successful!</h3>
                     </div>
                 </div>
             )}
