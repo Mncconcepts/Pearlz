@@ -5,7 +5,7 @@ import "./Banner.css";
 import { Link } from "react-router-dom";
 
 const Hero = () => {
-  
+
   const ratingCount = Math.floor(Math.random() * 50) + 1;
 
   const customerCount = Math.floor(Math.random() * 50) + 1 + "k+ Customers";
@@ -28,8 +28,8 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
         >
-          With our top quality skin product, Discover premium products with unbeatable 
-          deals and top-rated customer service, wild range quality products just for you, 
+          With our top quality skin product, Discover premium products with unbeatable
+          deals and top-rated customer service, wild range quality products just for you,
           explore more beautiful products by clicking on the start shopping button
         </motion.p>
 
@@ -65,6 +65,19 @@ const Hero = () => {
         >
           <Link to="/shop" className="hero-btn-link">Start Shopping</Link>
         </motion.button>
+        {/* Profile Images */}
+        <motion.div
+          className="profilee-images"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 1 }}
+        >
+          <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Profile" />
+          <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Profile" />
+          <img src="https://randomuser.me/api/portraits/women/3.jpg" alt="Profile" />
+          <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="Profile" />
+          <img src="https://randomuser.me/api/portraits/women/5.jpg" alt="Profile" />
+        </motion.div>
       </div>
 
       {/* Right Side - Background Image */}
