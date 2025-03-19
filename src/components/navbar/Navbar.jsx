@@ -68,7 +68,9 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             {/* Logo Section */}
-            <div className="logo">Pearlz.</div>
+            <Link to="/home" className="unstyled-link">
+                <div className="logo">Pearlz.</div>
+            </Link>
 
             {/* Navigation Menu */}
             <div className="nav-menu">
@@ -173,17 +175,17 @@ const Navbar = () => {
             </div>
             {/* Profile Icon/Image */}
             <div className="profile-icon" onClick={() => navigate("/profile")}>
-                    {profileImage ? (
-                        <img
-                            src={profileImage}
-                            alt="Profile"
-                            className="profile-img"
-                            style={{ width: "30px", height: "30px", borderRadius: "50%" }}
-                        />
-                    ) : (
-                        <FaUser className="icon" />
-                    )}
-                </div>
+                {profileImage ? (
+                    <img
+                        src={profileImage}
+                        alt="Profile"
+                        className="profile-img"
+                        style={{ width: "30px", height: "30px", borderRadius: "50%" }}
+                    />
+                ) : (
+                    <FaUser className="icon" />
+                )}
+            </div>
         </nav>
     );
 };
