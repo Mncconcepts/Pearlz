@@ -31,6 +31,7 @@ import SingleShop from './components/navbar/SingleShop.jsx';
 import Shop from './components/navbar/Shop.jsx';
 import Signup from './components/navbar/Signup.jsx';
 import Help from './components/navbar/Help.jsx';
+import Terms from './components/navbar/Terms.jsx';
 
 
 
@@ -91,6 +92,10 @@ const router = createHashRouter([
       {
         path: "/help",
         element: <Help/>
+      },
+      {
+        path: "/terms",
+        element: <Terms/>
       },
 
     ],

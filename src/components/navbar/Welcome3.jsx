@@ -29,7 +29,7 @@ const Welcome3 = () => {
       </div>
 
       <motion.img
-        src="/welcome2.jpg"
+        src="/welcome5.jpg"
         alt="Skincare"
         className="welcome-image"
         initial={{ scale: 1, opacity: 2 }}
@@ -47,7 +47,7 @@ const Welcome3 = () => {
         <h1 className="welcome-text">
           <Typewriter
             options={{
-              strings: 'Discover More Better Skincare Product, That Norishes Your Skin, Create An Account To Get Started',
+              strings: 'Discover More Better Skincare Products, That Norishes Your Skin, Create An Account To Get Started.',
               autoStart: true,
               loop: false,
             }}
@@ -59,13 +59,13 @@ const Welcome3 = () => {
       <div className="button-container">
         <button
           className="welcome-button"
-          onClick={() => navigate('/signup')}
+          onClick={() => navigate('/terms')}
         >
           Create Account
         </button>
         <button
           className="welcome-skip"
-          onClick={() => navigate('/login')}
+          onClick={() => navigate('/terms')}
         >
           Login
         </button>

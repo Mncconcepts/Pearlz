@@ -1,0 +1,102 @@
+.terms-container {
+    position: relative;
+    min-height: 100vh;
+    background: url('/s5.png') center center/cover no-repeat;
+    overflow: hidden;
+  }
+  
+  .blur-overlay {
+    position: absolute;
+    inset: 0;
+    backdrop-filter: none;
+    transition: backdrop-filter 0.7s ease;
+  }
+  
+  .blur-overlay.active {
+    backdrop-filter: blur(5px);
+  }
+  
+  .terms-card {
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%) translateY(100%);
+    transition: transform 0.7s ease-in-out;
+    z-index: 10;
+  }
+  
+  .terms-card.active {
+    bottom: 50%;
+    transform: translateX(-50%) translateY(50%);
+  }
+  
+  .terms-content {
+    background: #ffffff;
+    padding: 2rem;
+    width: 90vw;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(49, 49, 49, 0.096);
+    margin-top: 7rem;
+    margin-bottom: 2rem;
+  }
+  
+  .terms-button{
+    margin-top: 1rem;
+    padding: 0.7rem 1rem;
+    background: #37acbb;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-align: center;
+  }
+
+  .privacy-icon {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    color: #2d8cb8;
+    padding: 10px;
+    border-radius: 50%;
+    margin-top: 6rem;
+  }
+  
+  .terms-content h1 {
+    text-align: center;
+    color: #242223;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  
+  .terms-content h2 {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #2d8cb8;
+  }
+  
+  .terms-content p {
+    color: #414040;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+  }
+  
+  .footer {
+    text-align: center;
+    font-size: 0.75rem;
+    color: #999;
+    margin-top: 1rem;
+  }
+  

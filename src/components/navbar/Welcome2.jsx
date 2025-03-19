@@ -29,7 +29,7 @@ const Welcome2 = () => {
       </div>
 
       <motion.img
-        src="/welcome3.jpg"
+        src="/welcome6.jpg"
         alt="Skincare"
         className="welcome-image"
         initial={{ scale: 1, opacity: 2 }}
@@ -70,7 +70,7 @@ const Welcome2 = () => {
           Skip
         </button>
       </div>
-
+      
       {/* Slide Indicator Dots */}
       <div className="dots-container">
         <span className="dot active"></span>
