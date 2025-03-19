@@ -9,6 +9,7 @@ import Login from "./components/navbar/Login";
 import Footer from "./components/navbar/Footer";
 import WelcomePage from "./components/navbar/WelcomePage";
 import Loader from "./components/navbar/Loader";
+import Terms from "./components/navbar/Terms";
 
 const Home = () => <h1></h1>;
 
@@ -25,6 +26,7 @@ function App() {
   };
 
   const isWelcomePage = location.pathname === "/";
+  const isTermsPage = location.pathname === "/terms"; // ADDED THIS
 
   useEffect(() => {
     AOS.init({
@@ -56,12 +58,13 @@ function App() {
         <>
           <Routes>
             <Route path="/" element={<WelcomePage onLogin={handleLogin} />} />
+            <Route path="/terms" element={<Terms onLogin={handleLogin} />} /> {/* FIXED PATH */}
             <Route path="/signup" element={<Signup onLogin={handleLogin} />} />
             <Route path="/login" element={<Login onLogin={handleLogin} />} />
             <Route path="/home" element={<Home />} />
           </Routes>
 
-          {!isWelcomePage && (
+          {!isWelcomePage && !isTermsPage && ( // FIXED LOGIC HERE
             <>
               <Navbar user={user} />
               <div className="main-container">
