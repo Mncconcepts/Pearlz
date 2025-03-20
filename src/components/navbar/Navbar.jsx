@@ -5,7 +5,6 @@ import {
     FaHeart,
     FaShoppingCart,
     FaUser,
-    FaEnvelope,
     FaBars,
     FaTimes,
     FaFacebook,
@@ -21,7 +20,9 @@ const Navbar = () => {
     const [searchOpen, setSearchOpen] = useState(false);
     const [searchQuery, setSearchQuery] = useState("");
     const [searchResults, setSearchResults] = useState([]);
+    const [allProducts, setAllProducts] = useState([]);
     const [profileImage, setProfileImage] = useState(null);
+
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -33,15 +34,19 @@ const Navbar = () => {
         if (storedProfile) {
             setProfileImage(storedProfile);
         }
-
         updateCartCount();
-
-        // Listen for storage changes (when items are added)
         window.addEventListener("storage", updateCartCount);
+        return () => window.removeEventListener("storage", updateCartCount);
+    }, []);
 
-        return () => {
-            window.removeEventListener("storage", updateCartCount);
-        };
+    useEffect(() => {
+        fetch("/products.json")
+            .then((res) => res.json())
+            .then((data) => {
+                setAllProducts(data);
+                setSearchResults(data);
+            })
+            .catch((err) => console.error("Error fetching products:", err));
     }, []);
 
     const toggleMenu = () => {
@@ -58,12 +63,22 @@ const Navbar = () => {
 
     const handleSearchChange = (e) => {
         setSearchQuery(e.target.value);
-        const allItems = JSON.parse(localStorage.getItem("items")) || [];
-        const filteredItems = allItems.filter((item) =>
+        const storageItems = JSON.parse(localStorage.getItem("items")) || [];
+        const mergedItems = [...storageItems, ...allProducts];
+
+        const filteredItems = mergedItems.filter((item) =>
             item.name.toLowerCase().includes(e.target.value.toLowerCase())
         );
         setSearchResults(filteredItems);
     };
+
+    const handleSearchClick = (item) => {
+        localStorage.setItem("selectedProduct", JSON.stringify(item));
+        navigate(`/singleshop`);
+        setSearchOpen(false);
+        setSearchQuery("");
+    };
+
 
     return (
         <nav className="navbar">
@@ -75,78 +90,44 @@ const Navbar = () => {
             {/* Navigation Menu */}
             <div className="nav-menu">
                 <ul className="nav-links">
-                    <li onClick={handleMenuClose}>
-                        <Link to="/home">Home</Link>
-                    </li>
-                    <li onClick={handleMenuClose}>
-                        <Link to="/shop">Shop</Link>
-                    </li>
-                    <li onClick={handleMenuClose}>
-                        <Link to="/services">Services</Link>
-                    </li>
-                    <li onClick={handleMenuClose}>
-                        <Link to="/about">About</Link>
-                    </li>
-                    <li onClick={handleMenuClose}>
-                        <Link to="/blog">Blog</Link>
-                    </li>
-                    <li onClick={handleMenuClose}>
-                        <Link to="/contact">Contact</Link>
-                    </li>
+                    <li onClick={handleMenuClose}><Link to="/home">Home</Link></li>
+                    <li onClick={handleMenuClose}><Link to="/shop">Shop</Link></li>
+                    <li onClick={handleMenuClose}><Link to="/services">Services</Link></li>
+                    <li onClick={handleMenuClose}><Link to="/about">About</Link></li>
+                    <li onClick={handleMenuClose}><Link to="/blog">Blog</Link></li>
+                    <li onClick={handleMenuClose}><Link to="/contact">Contact</Link></li>
                 </ul>
                 <button className="joinn-btn-outline" onClick={() => navigate("/signup")}>Join Us</button>
             </div>
 
-            {/* Hamburger Menu (Mobile) */}
+            {/* Hamburger Menu */}
             <div className="hamburger" onClick={toggleMenu}>
                 {menuToggle ? <FaTimes /> : <FaBars />}
             </div>
 
-            {/* Mobile Sliding Card Menu */}
+            {/* Mobile Sliding Menu */}
             <div className={`mobile-menu ${menuToggle ? "open" : ""}`}>
+                <h3 className="top">PEARLZ</h3>
                 <ul className="mobile-nav">
-                    <li onClick={handleMenuClose}>
-                        <Link to="/home">Home</Link>
-                    </li>
-                    <li onClick={handleMenuClose}>
-                        <Link to="/shop">Shop</Link>
-                    </li>
-                    <li onClick={handleMenuClose}>
-                        <Link to="/services">Services</Link>
-                    </li>
-                    <li onClick={handleMenuClose}>
-                        <Link to="/about">About</Link>
-                    </li>
-                    <li onClick={handleMenuClose}>
-                        <Link to="/blog">Blog</Link>
-                    </li>
-                    <li onClick={handleMenuClose}>
-                        <Link to="/contact">Contact</Link>
-                    </li>
+                    <li onClick={handleMenuClose}><Link to="/home">Home</Link></li>
+                    <li onClick={handleMenuClose}><Link to="/shop">Shop</Link></li>
+                    <li onClick={handleMenuClose}><Link to="/services">Services</Link></li>
+                    <li onClick={handleMenuClose}><Link to="/about">About</Link></li>
+                    <li onClick={handleMenuClose}><Link to="/blog">Blog</Link></li>
+                    <li onClick={handleMenuClose}><Link to="/contact">Contact</Link></li>
                 </ul>
-
-                {/* Join Us Button Inside Card */}
                 <button className="join-btn-outline" onClick={() => navigate("/signup")}>Join Us</button>
                 <button className="join-btn-outline" onClick={() => navigate("/logout")}>Logout</button>
 
-                {/* Social Icons Below Menu */}
                 <div className="social-icons">
-                    <a href="#">
-                        <FaFacebook />
-                    </a>
-                    <a href="#">
-                        <FaTwitter />
-                    </a>
-                    <a href="#">
-                        <FaLinkedin />
-                    </a>
-                    <a href="#">
-                        <FaInstagram />
-                    </a>
+                    <a href="#"><FaFacebook /></a>
+                    <a href="#"><FaTwitter /></a>
+                    <a href="#"><FaLinkedin /></a>
+                    <a href="#"><FaInstagram /></a>
                 </div>
             </div>
 
-            {/* Icons Section (Hidden on Mobile) */}
+            {/* Icons */}
             <div className="nav-icons">
                 <div className="search-icon" onClick={toggleSearch}>
                     <FaSearch className="icon" />
@@ -157,10 +138,13 @@ const Navbar = () => {
                                 placeholder="Search..."
                                 value={searchQuery}
                                 onChange={handleSearchChange}
+                                onFocus={() => setSearchResults(allProducts)}
                             />
                             <ul className="search-results">
                                 {searchResults.map((item) => (
-                                    <li key={item.id}>{item.name}</li>
+                                    <li key={item.id} onClick={() => handleSearchClick(item)}>
+                                        {item.name}
+                                    </li>
                                 ))}
                             </ul>
                         </div>
@@ -173,7 +157,8 @@ const Navbar = () => {
                 <FaShoppingCart className="icon" onClick={() => navigate("/shop")} />
                 <FaUser className="icon" onClick={() => navigate("/profile")} />
             </div>
-            {/* Profile Icon/Image */}
+
+            {/* Profile */}
             <div className="profile-icon" onClick={() => navigate("/profile")}>
                 {profileImage ? (
                     <img

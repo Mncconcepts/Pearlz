@@ -98,6 +98,7 @@ const Hero2 = () => {
               <img src={image} alt="Product" />
               <p> Item {index + 1}</p>
               <span>$XX.XX</span>
+              <div className="ratings">⭐⭐⭐⭐☆</div>
               <button onClick={() => handleAddToCart({ id: index + 1, name: `Product Name ${index + 1}`, price: "$XX.XX", image })}>View Single</button>
             </div>
           ))}
@@ -120,6 +121,7 @@ const Hero2 = () => {
             <div data-aos="fade-down" key={index} className="product-item">
               <img src={image} alt="Deal" />
               <p>Deal Product {index + 1}</p>
+              <div className="ratings">⭐⭐⭐⭐☆</div>
               <span>$XX.XX</span>
               <button onClick={() => handleAddToCart({ id: index + 100, name: `Deal Product ${index + 1}`, price: "$XX.XX", image })}>View Single</button>
             </div>

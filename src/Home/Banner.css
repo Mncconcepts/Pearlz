@@ -17,7 +17,7 @@
 }
 
 .hero-title {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: bold;
     line-height: 1.05;
     color: #1a1a1a;
@@ -34,7 +34,7 @@
 }
 
 .hero-ratings {
-    margin-top: 20px;
+    margin-top: 2px;
     display: flex;
     align-items: center;
     gap: 20px;
@@ -68,6 +68,7 @@
     font-size: 1rem;
     font-weight: bold;
     color: #220d0d;
+    margin-top: -1rem;
 }
 
 .highlight {
