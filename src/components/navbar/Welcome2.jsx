@@ -65,7 +65,7 @@ const Welcome2 = () => {
         </button>
         <button
           className="welcome-skip"
-          onClick={() => navigate('/signup')}
+          onClick={() => navigate('/terms')}
         >
           Skip
         </button>
