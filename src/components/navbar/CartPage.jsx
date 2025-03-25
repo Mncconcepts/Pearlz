@@ -1,12 +1,24 @@
 import React, { useState, useEffect } from "react";
 import "./CartPage.css";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const CartPage = () => {
   const [cart, setCart] = useState([]);
   const [products, setProducts] = useState([]);
   const [shipping, setShipping] = useState(0);
   const [showPopup, setShowPopup] = useState(false);
+  const [showPaymentForm, setShowPaymentForm] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    address: "",
+  });
+
+  const handleInputChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
 
   useEffect(() => {
     const storedCart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -138,7 +150,6 @@ const CartPage = () => {
           transition={{ duration: 0.3, ease: "easeOut" }}
         >
           <div className="popup-content">
-            <h2>Select Payment Method</h2>
 
             {/* Mastercard Section */}
             <div className="payment-section">
@@ -171,17 +182,27 @@ const CartPage = () => {
                 <option value="ZA">South Africa</option>
                 <option value="FR">France</option>
               </select>
+              <select className="input-field">
+                <option value="">Select State</option>
+                <option value="NG">Lagos</option>
+                <option value="US">Portharcourt</option>
+                <option value="UK">Abuja</option>
+                <option value="CA">Edo</option>
+                <option value="ZA">Imo</option>
+                <option value="FR">Yenagoa</option>
+              </select>
               <input type="text" className="input-field" placeholder="Zip Code" required />
 
               <input type="tel" className="input-field" placeholder="Phone Number" required />
             </div>
             {/* Buttons */}
-            <button className="proceed-btn">Proceed to Payment</button>
+            <Link to="/checkout">
+              <button className="proceed-btn" onClick={() => setShowPaymentForm(true)}>Proceed to Payment</button>
+            </Link>
             <button className="close-btn" onClick={() => setShowPopup(false)}>Close</button>
           </div>
         </motion.div>
       )}
-
     </div>
   );
 };

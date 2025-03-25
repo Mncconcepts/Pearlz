@@ -205,18 +205,19 @@
   justify-content: center;
   align-items: center;
   background: rgba(0, 0, 0, 0.5);
-  z-index: 1000;
+  z-index: 9999;
 }
 
 .popup-content {
   background: #fff;
   width: 90%;
   max-width: 400px;
-  padding: 20px;
+  padding: 50px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
+
 
 .payment-section {
   width: 100%;
@@ -303,4 +304,10 @@
 .close-btn:hover {
   background-color: #c82333;
 }
+
+
+
+
+
+
 

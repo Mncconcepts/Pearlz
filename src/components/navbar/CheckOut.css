@@ -1,0 +1,241 @@
+.checkout-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.cartt-summary {
+    width: 45%;
+    background: #fffbfb;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.116);
+    margin-top: 6rem;
+    margin-bottom: -4rem;
+}
+
+.cartt-summary h2 {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.cartt-items-container {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.cartt-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #1e1e1e;
+    padding: 10px;
+    border-radius: 8px;
+    min-width: 140px;
+    text-align: center;
+}
+
+.cartt-item-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.cartt-item-details p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.checkout-form {
+    width: 50%;
+    background: hsl(0, 0%, 100%);
+    padding: 20px;
+    border-radius: 8px;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 6rem;
+}
+
+.checkout-form h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.checkout-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    background: #faf4f4;
+    color: rgb(17, 17, 17);
+    font-size: 16px;
+}
+
+.checkout-form input:focus {
+    border: 1px solid #007bff;
+    outline: none;
+}
+
+.checkoutt-btn {
+    width: 100%;
+    padding: 12px;
+    background: #28a745;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.checkout-btn:hover {
+    background: #218838;
+}
+
+@media (max-width: 768px) {
+    .checkout-container {
+        flex-direction: column;
+        align-items: center;
+        margin-top: -1rem;
+    }
+
+    .cartt-summary,
+    .checkout-form {
+        width: 90%;
+    }
+
+    .cartt-items-container {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .cartt-item {
+        min-width: 120px;
+    }
+}
+
+
+.poopup-overlay,
+.processing-overlay,
+.success-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.poopup-card p {
+    font-weight: bold;
+    max-width: 300px;
+}
+
+.poopup-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.poopup-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.yes-btn,
+.no-btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.yes-btn {
+    background: rgb(26, 114, 141);
+    color: white;
+}
+
+.no-btn {
+    color: rgb(0, 0, 0);
+}
+
+.looader {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.success-overlayy {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 4rem;
+}
+
+.dispatch-image-container img {
+    width: 150px;
+    height: auto;
+}
+
+@media (max-width: 480px) {
+    .checkout-container {
+        flex-direction: column;
+        align-items: center;
+        margin-top: -1rem;
+    }
+
+    .cartt-summary,
+    .checkout-form {
+        width: 90%;
+    }
+
+    .cartt-items-container {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .cartt-item {
+        min-width: 120px;
+    }
+    .success-overlayy {
+        text-align: center;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: -1rem;
+    }
+    
+    .dispatch-image-container img {
+        width: 200px;
+        height: auto;
+    }
+}
