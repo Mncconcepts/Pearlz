@@ -32,7 +32,7 @@ import Shop from './components/navbar/Shop.jsx';
 import Signup from './components/navbar/Signup.jsx';
 import Help from './components/navbar/Help.jsx';
 import Terms from './components/navbar/Terms.jsx';
-import CheckOut from './components/navbar/Checkout.jsx';
+import CheckOut from './components/navbar/CheckOut.jsx';
 
 
 
