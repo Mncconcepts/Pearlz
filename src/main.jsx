@@ -32,7 +32,7 @@ import Shop from './components/navbar/Shop.jsx';
 import Signup from './components/navbar/Signup.jsx';
 import Help from './components/navbar/Help.jsx';
 import Terms from './components/navbar/Terms.jsx';
-import Checkout from "./components/navbar/Checkout.jsx";
+import PayOut from './components/navbar/PayOut.jsx';
 
 
 
@@ -99,10 +99,9 @@ const router = createHashRouter([
         element: <Terms/>
       },
       {
-        path: "/checkout",
-        element: <Checkout/>
+        path: "/payout",
+        element: <PayOut/>
       },
-     
 
     ],
   },

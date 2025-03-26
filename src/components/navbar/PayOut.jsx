@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import "./Checkout.css";
+import "./PayOut.css";
 import { Link } from "react-router-dom";
 
-const Checkout = () => {
+const PayOut = () => {
     const [cart, setCart] = useState([]);
     const [formData, setFormData] = useState({
         name: "",
@@ -144,4 +144,4 @@ const Checkout = () => {
     );
 };
 
-export default Checkout;
+export default PayOut;

@@ -196,7 +196,7 @@ const CartPage = () => {
               <input type="tel" className="input-field" placeholder="Phone Number" required />
             </div>
             {/* Buttons */}
-            <Link to="/checkout">
+            <Link to="/payout">
               <button className="proceed-btn" onClick={() => setShowPaymentForm(true)}>Proceed to Payment</button>
             </Link>
             <button className="close-btn" onClick={() => setShowPopup(false)}>Close</button>
