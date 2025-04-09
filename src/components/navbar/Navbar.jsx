@@ -107,7 +107,7 @@ const Navbar = () => {
 
             {/* Mobile Sliding Menu */}
             <div className={`mobile-menu ${menuToggle ? "open" : ""}`}>
-                <h3 className="top">PEARLZ</h3>
+                <h3 className="top">PEARLZ.</h3>
                 <ul className="mobile-nav">
                     <li onClick={handleMenuClose}><Link to="/home">Home</Link></li>
                     <li onClick={handleMenuClose}><Link to="/shop">Shop</Link></li>

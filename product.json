@@ -94,5 +94,37 @@
     "oldPrice": 19.99,
     "tag": "-25%",
     "img": "/phase12.png"
+  },
+   {
+    "id": 9,
+    "name": "Charcoal Detox Face Mask",
+    "price": 14.99,
+    "oldPrice": 18.99,
+    "tag": "-15%",
+    "img": "/phase9.png"
+  },
+  {
+    "id": 10,
+    "name": "Rose Water Hydrating Mist",
+    "price": 7.5,
+    "oldPrice": 9.5,
+    "tag": "New",
+    "img": "/phase10.png"
+  },
+  {
+    "id": 11,
+    "name": "Exfoliating Sugar Scrub",
+    "price": 6.99,
+    "oldPrice": 8.99,
+    "tag": "-20%",
+    "img": "/phase11.png"
+  },
+  {
+    "id": 12,
+    "name": "Shea Body Butter",
+    "price": 15.0,
+    "oldPrice": 19.99,
+    "tag": "-25%",
+    "img": "/phase12.png"
   }
 ]

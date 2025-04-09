@@ -192,18 +192,31 @@ const Hero2 = () => {
       {popupProduct && (
         <>
           <div className="popup-overlay" onClick={handleBack}></div>
-          <div className="popup-card">
-            <img src={popupProduct.image} alt={popupProduct.name} className="popup-image" />
-            <h2>{popupProduct.name}</h2>
-            <p>Price: {popupProduct.price}</p>
-            <div className="popup-actions">
-              <Link to="/shop">
-                <button onClick={handleViewCart} className="popup-btn view-cart">View Shop Product</button>
-              </Link>
-              <button onClick={handleBack} className="popup-btn back">Back</button>
+          {popupProduct && (
+            <div className="popup-card">
+              {popupProduct.image && (
+                <img
+                  src={popupProduct.image}
+                  alt={popupProduct.name || "Product Image"}
+                  className="popup-image"
+                />
+              )}
+              <h2>{popupProduct.name || "Unnamed Product"}</h2>
+              <p>Price: {popupProduct.price ? `$${popupProduct.price}` : "N/A"}</p>
+              <div className="popup-actions">
+                <Link to="/shop">
+                  <button onClick={handleViewCart} className="popup-btn view-cart">
+                    View Shop Product
+                  </button>
+                </Link>
+                <button onClick={handleBack} className="popup-btn back">
+                  Back
+                </button>
+              </div>
             </div>
-          </div>
+          )}
         </>
+
       )}
     </div>
   );

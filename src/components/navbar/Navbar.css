@@ -10,7 +10,8 @@
     width: 100%;
     z-index: 1000;
 }
-.top{
+
+.top {
     color: #257488;
     font-size: 2rem;
     font-weight: bold;
@@ -21,7 +22,7 @@
     font-size: 26px;
     font-weight: bold;
     letter-spacing: 1px;
-    margin-left: 3rem;
+    margin-left: 4.5rem;
 }
 
 .unstyled-link {
@@ -40,6 +41,7 @@
     background-color: #f0f0f0;
     color: #257488;
     cursor: pointer;
+    margin-right: 4.1rem;
 }
 
 .profile-img {
@@ -185,7 +187,7 @@
 
 .mobile-nav li {
     padding: 15px;
-    
+
 }
 
 .mobile-nav a {
@@ -229,8 +231,22 @@
     .social-icons {
         display: none;
         color: #222;
-
     }
+
+    .profile-icon {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f0f0f0;
+        color: #257488;
+        cursor: pointer;
+        margin-right: 1rem;
+    }
+
 
     .nav-icons .icon {
         width: 20px;
@@ -263,46 +279,9 @@
         display: flex;
         align-items: center;
     }
-
-    .cart-badge {
-        position: absolute;
-        top: -8px;
-        right: -8px;
-        background-color: red;
-        color: white;
-        border-radius: 50%;
-        padding: 2px 6px;
-        font-size: 12px;
-        font-weight: bold;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-width: 18px;
-        height: 18px;
-        box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
-        margin-right: 24rem;
-    }
 }
 
 @media screen and (max-width: 480px) {
-    .cart-badge {
-        position: absolute;
-        top: -8px;
-        right: -8px;
-        background-color: red;
-        color: white;
-        border-radius: 50%;
-        padding: 2px 6px;
-        font-size: 12px;
-        font-weight: bold;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-width: 18px;
-        height: 18px;
-        box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
-        margin-right: 24rem;
-    }
 
     .nav-icons {
         display: flex;
@@ -316,12 +295,28 @@
         object-fit: cover;
         border-radius: 50%;
     }
+
+    .profile-icon {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f0f0f0;
+        color: #257488;
+        cursor: pointer;
+        margin-right: 1rem;
+    }
+
     .logo {
         font-size: 26px;
         font-weight: bold;
         letter-spacing: 1px;
         margin-left: 1rem;
     }
+
     .unstyled-link {
         text-decoration: none;
         color: inherit;
@@ -332,25 +327,6 @@
 .heart-icon-wrapper {
     position: relative;
     display: inline-block;
-}
-
-.cart-badge {
-    position: absolute;
-    top: -8px;
-    right: -8px;
-    background-color: red;
-    color: white;
-    border-radius: 50%;
-    padding: 2px 6px;
-    font-size: 12px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 18px;
-    height: 18px;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
-
 }
 
 
@@ -375,7 +351,7 @@
     max-height: 300px;
     overflow-y: scroll;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     z-index: 1000;
 }
 
@@ -513,7 +489,4 @@
         display: flex;
     }
 
-    .cart-badge {
-        margin-right: 20rem;
-    }
 }
