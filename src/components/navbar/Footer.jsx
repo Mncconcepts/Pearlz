@@ -58,7 +58,14 @@ const footerbottomList = [
     { text: 'trends', link: '#' },
 ];
 
+  
+
 const Footer = () => {
+    // Scroll to top functionality
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+
     return (
         <footer className="style-2">
             <div className="footer-top dark-view padding-tb">
@@ -159,6 +166,10 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+            {/* Scroll to Top Arrow */}
+            <div className="scroll-top" onClick={scrollToTop}>
+                <strong className="ms-1">↑</strong>
             </div>
         </footer>
     );
