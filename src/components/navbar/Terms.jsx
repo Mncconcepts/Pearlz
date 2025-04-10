@@ -15,6 +15,7 @@ const Terms = () => {
             <div className={`blur-overlay ${showCard ? 'active' : ''}`} />
             <div className={`terms-card ${showCard ? 'active' : ''}`}>
                 <div className="privacy-icon">
+                <span class="glow-layer"></span>
                     <FaUserShield size={50} />
                 </div>
 

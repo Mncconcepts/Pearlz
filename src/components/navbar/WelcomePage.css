@@ -22,12 +22,13 @@
 .circle {
   position: absolute;
   bottom: -150px;
-  width: 5px;
-  height: 5px;
+  width: 10px; 
+  height: 10px;
   background-color: white;
-  border-radius: 100%;
-  animation: slideUpExpand 1.5s ease-out forwards;
+  border-radius: 80%;
+  animation: slideUpExpand 1.3s ease-out forwards;
 }
+
 
 .bdy.white-bg {
   background-color: white;
