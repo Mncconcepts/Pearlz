@@ -26,7 +26,7 @@
   height: 10px;
   background-color: white;
   border-radius: 80%;
-  animation: slideUpExpand 1.3s ease-out forwards;
+  animation: slideUpExpand 0.8s ease-out forwards;
 }
 
 
@@ -34,14 +34,6 @@
   background-color: white;
 }
 
-.title {
-  color: #25a83b;
-  font-size: 3rem;
-  font-weight: bold;
-  opacity: 0;
-  animation: fadeIn 1s ease-out 3s forwards, zoomOut 1.5s ease-in 7s forwards;
-  z-index: 3;
-}
 
 .title {
   color: #25a83b;
@@ -49,9 +41,9 @@
   font-weight: bold;
   opacity: 0;
   animation:
-    fadeIn 1s ease-out 3s forwards,
-    shakeWave 1s ease-in-out 4.2s forwards,
-    zoomOut 1.5s ease-in 7s forwards;
+    fadeIn 1s ease-out 1s forwards,
+    shakeWave 0.8s ease-in-out 2s forwards,
+    zoomOut 0.5s ease-in 4s forwards;
   z-index: 3;
 }
 

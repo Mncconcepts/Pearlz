@@ -14,12 +14,12 @@ const WelcomePage = () => {
     // Change background to white after the circle covers the screen
     const bgTimer = setTimeout(() => {
       setWhiteBg(true);
-    }, 2500);
+    }, 2000);
 
     // Show title after background is fully white
     const textTimer = setTimeout(() => {
       setShowTitle(true);
-    }, 2000);
+    }, 1000);
 
     return () => {
       clearTimeout(bgTimer);
@@ -38,7 +38,7 @@ const WelcomePage = () => {
     if (textIndex === titleText.length) {
       const navigateTimer = setTimeout(() => {
         navigate("/welcome2");
-      }, 7000);
+      }, 3000);
       return () => clearTimeout(navigateTimer);
     }
   }, [textIndex, showTitle, titleText, navigate]);
