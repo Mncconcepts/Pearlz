@@ -13,7 +13,7 @@ const Welcome3 = () => {
   useEffect(() => {
     setTimeout(() => {
       setShowText(true);
-    }, 500);
+    }, 200);
   }, []);
 
   return (

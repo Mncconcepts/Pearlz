@@ -109,12 +109,12 @@ const Navbar = () => {
             <div className={`mobile-menu ${menuToggle ? "open" : ""}`}>
                 <h3 className="top">PEARLZ.</h3>
                 <ul className="mobile-nav">
-                    <li onClick={handleMenuClose}><Link to="/home">Home</Link></li>
-                    <li onClick={handleMenuClose}><Link to="/shop">Shop</Link></li>
-                    <li onClick={handleMenuClose}><Link to="/services">Services</Link></li>
-                    <li onClick={handleMenuClose}><Link to="/about">About</Link></li>
-                    <li onClick={handleMenuClose}><Link to="/blog">Blog</Link></li>
-                    <li onClick={handleMenuClose}><Link to="/contact">Contact</Link></li>
+                    <li onClick={handleMenuClose}><Link to="/home">HOME</Link></li>
+                    <li onClick={handleMenuClose}><Link to="/shop">SHOP</Link></li>
+                    <li onClick={handleMenuClose}><Link to="/services">SERVICES</Link></li>
+                    <li onClick={handleMenuClose}><Link to="/about">ABOUT</Link></li>
+                    <li onClick={handleMenuClose}><Link to="/blog">BLOG</Link></li>
+                    <li onClick={handleMenuClose}><Link to="/contact">CONTACT</Link></li>
                 </ul>
                 <button className="join-btn-outline" onClick={() => navigate("/signup")}>Join Us</button>
                 <button className="join-btn-outline" onClick={() => navigate("/logout")}>Logout</button>

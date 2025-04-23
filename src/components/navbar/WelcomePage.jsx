@@ -38,7 +38,7 @@ const WelcomePage = () => {
     if (textIndex === titleText.length) {
       const navigateTimer = setTimeout(() => {
         navigate("/welcome2");
-      }, 3000);
+      }, 4000);
       return () => clearTimeout(navigateTimer);
     }
   }, [textIndex, showTitle, titleText, navigate]);

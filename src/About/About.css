@@ -57,7 +57,7 @@
 }
 
 .stat-box {
-    background: #299eb3;
+    background: #b5d8df;
     color: #fff;
     padding: 15px;
     border-radius: 5px;
@@ -223,15 +223,10 @@
 
     .text-container span p {
         text-align: center;
-        text-align: justify;
         font-size: small;
     }
     .text-container p{
         font-size: small;
-    }
-    .text-container span p{
-        text-align: center;
-        text-align: justify;
     }
 
     .text-container h2 {

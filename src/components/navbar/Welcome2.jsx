@@ -13,7 +13,7 @@ const Welcome2 = () => {
   useEffect(() => {
     setTimeout(() => {
       setShowText(true);
-    }, 500);
+    }, 200);
   }, []);
 
   return (
@@ -47,7 +47,7 @@ const Welcome2 = () => {
         <h1 className="welcome-text">
           <Typewriter
             options={{
-              strings: 'Welcome To PEARL, Your One-Stop Shopify Skincare Website.',
+              strings: 'Welcome To PEARLZ, Your One-Stop Shopify Skincare Website.',
               autoStart: true,
               loop: false,
             }}

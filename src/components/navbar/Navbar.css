@@ -167,7 +167,7 @@
     background: #fcfafa;
     box-shadow: 5px 0 10px rgba(160, 157, 157, 0.123);
     padding-top: 60px;
-    transition: left 0.7s ease-in-out;
+    transition: left 0.3s ease-in-out;
     display: flex;
     flex-direction: column;
     align-items: center;
