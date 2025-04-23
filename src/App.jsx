@@ -26,7 +26,7 @@ function App() {
   };
 
   const isWelcomePage = location.pathname === "/";
-  const isTermsPage = location.pathname === "/terms"; // ADDED THIS
+  const isTermsPage = location.pathname === "/terms";
 
   useEffect(() => {
     AOS.init({
@@ -39,32 +39,45 @@ function App() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [location.pathname]);  
+  }, [location.pathname]);
 
   useEffect(() => {
-    setLoading(true); 
+    // Skip loader for WelcomePage
+    if (isWelcomePage) {
+      setLoading(false);
+      return;
+    }
+
+    // Optional: Skip loader on small screens for performance
+    const isSmallScreen = window.innerWidth <= 576;
+    if (isSmallScreen) {
+      setLoading(false);
+      return;
+    }
+
+    setLoading(true);
     const timer = setTimeout(() => {
       setLoading(false);
     }, 2000);
-    
+
     return () => clearTimeout(timer);
   }, [location.pathname]);
 
   return (
     <div className={`app ${darkMode ? "dark-mode" : "light-mode"}`}>
       {loading ? (
-        <Loader /> 
+        <Loader />
       ) : (
         <>
           <Routes>
             <Route path="/" element={<WelcomePage onLogin={handleLogin} />} />
-            <Route path="/terms" element={<Terms onLogin={handleLogin} />} /> {/* FIXED PATH */}
+            <Route path="/terms" element={<Terms onLogin={handleLogin} />} />
             <Route path="/signup" element={<Signup onLogin={handleLogin} />} />
             <Route path="/login" element={<Login onLogin={handleLogin} />} />
             <Route path="/home" element={<Home />} />
           </Routes>
 
-          {!isWelcomePage && !isTermsPage && ( // FIXED LOGIC HERE
+          {!isWelcomePage && !isTermsPage && (
             <>
               <Navbar user={user} />
               <div className="main-container">
