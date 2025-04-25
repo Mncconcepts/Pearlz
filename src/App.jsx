@@ -48,13 +48,6 @@ function App() {
       return;
     }
 
-    // Optional: Skip loader on small screens for performance
-    const isSmallScreen = window.innerWidth <= 576;
-    if (isSmallScreen) {
-      setLoading(false);
-      return;
-    }
-
     setLoading(true);
     const timer = setTimeout(() => {
       setLoading(false);
