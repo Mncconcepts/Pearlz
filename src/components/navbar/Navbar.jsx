@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import {
     FaSearch,
-    FaHeart,
     FaShoppingCart,
     FaUser,
     FaBars,
@@ -11,6 +10,7 @@ import {
     FaTwitter,
     FaLinkedin,
     FaInstagram,
+    FaHeart,
 } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 
@@ -78,6 +78,25 @@ const Navbar = () => {
         setSearchOpen(false);
         setSearchQuery("");
     };
+
+    useEffect(() => {
+        const updateCartCount = () => {
+            const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
+            setCartCount(cartItems.length);
+        };
+    
+        updateCartCount();
+    
+        const interval = setInterval(updateCartCount, 1000);
+    
+        const storedProfile = localStorage.getItem("profileImage");
+        if (storedProfile) {
+            setProfileImage(storedProfile);
+        }
+    
+        return () => clearInterval(interval); // Cleanup on unmount
+    }, []);
+    
 
 
     return (
@@ -150,12 +169,12 @@ const Navbar = () => {
                         </div>
                     )}
                 </div>
-                <div className="heart-icon" onClick={() => navigate("/cartpage")}>
+                <div className="icon-container" onClick={() => navigate("/cartpage")}>
                     <FaHeart className="icon" />
-                    {cartCount > 0 && <span className="cart-count-badge">{cartCount}</span>}
+                    <span className="badge">{cartCount}</span>
                 </div>
+
                 <FaShoppingCart className="icon" onClick={() => navigate("/shop")} />
-                <FaUser className="icon" onClick={() => navigate("/profile")} />
             </div>
 
             {/* Profile */}
