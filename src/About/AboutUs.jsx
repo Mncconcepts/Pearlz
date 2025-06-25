@@ -102,12 +102,9 @@ const About = () => {
             <section className="why-choose-us bg-light">
                 <div data-aos="fade-down" className="">
                     <h3>WHY CHOOSE US ?</h3>
+                    <h2>Beauty Is Power, A Smile Is Its Sword</h2>
                 </div>
-                <h2>Beauty Is Power, A Smile Is Its Sword</h2>
-                <p>
-                    Our team of experienced professionals utilizes advanced techniques, high-quality products,
-                    and the latest innovations in dermatology to deliver exceptional results.
-                </p>
+
                 <div data-aos="zoom-in" className="features">
                     <div className="feature-box">100% Organic</div>
                     <div className="feature-box">Improve Health</div>

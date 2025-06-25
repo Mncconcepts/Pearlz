@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import "./SingleShop.css";
+import { FaStar } from "react-icons/fa";
 
 const SingleShop = () => {
   const [cart, setCart] = useState(() => JSON.parse(localStorage.getItem("cart")) || []);
@@ -13,7 +14,7 @@ const SingleShop = () => {
   const cartIconRef = useRef(null);
   const [reviewStatus, setReviewStatus] = useState("Submit Review");
   const [isSubmitting, setIsSubmitting] = useState(false);
-  
+
 
   useEffect(() => {
     const storedProduct = localStorage.getItem("selectedProduct");
@@ -39,7 +40,7 @@ const SingleShop = () => {
     animateAddToCart();
     setShowCart(true);
   };
-  
+
 
   const animateAddToCart = () => {
     const cartButton = document.querySelector(".add-to-cart-btn");
@@ -64,7 +65,7 @@ const SingleShop = () => {
       circle.remove();
     });
   };
-  
+
 
   const submitReview = (e) => {
     e.preventDefault();
@@ -95,7 +96,7 @@ const SingleShop = () => {
           <h1>{product.name}</h1>
           <p className="price">${product.price}</p>
           <p>{product.description}</p>
-          <div className="ratings">⭐⭐⭐⭐☆</div>
+          <div> <FaStar className="ratings"></FaStar><FaStar className="ratings"></FaStar><FaStar className="ratings"></FaStar><FaStar className="ratings"></FaStar>3.5k</div>
           <button className="add-to-cart-btn" onClick={addToCart}>Add to Cart</button>
           <button className="checkout-btn" onClick={() => navigate("/cartpage")}>Checkout</button>
           <div className="pagination">
@@ -130,6 +131,7 @@ const SingleShop = () => {
               <img src={relProd.img} alt={relProd.name} />
               <h4>{relProd.name}</h4>
               <p>${relProd.price}</p>
+              <button className="add-to-cart-btn" onClick={addToCart}>Add to Cart</button>
             </div>
           ))}
         </div>

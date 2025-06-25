@@ -42,103 +42,33 @@ const router = createHashRouter([
     path: "/",
     element: <App />,
     children: [
-      {
-        path: "/home",
-        element: <Home />
-      },
-      {
-        path: "/shop",
-        element: <Shop />
-      },
-      {
-        path: "/about",
-        element: <AboutUs />
-      },
-      {
-        path: "/singleshop",
-        element: <SingleShop />
-      },
-      {
-        path: "/services",
-        element: <Services />
-      },
-      {
-        path: "/cartpage",
-        element: <CartPage />
-      },
-      {
-        path: "/reviews",
-        element: <Reviews />
-      },
-      {
-        path: "/faq",
-        element: <Faq />
-      },
-      {
-        path: "/blog",
-        element: <Blog />
-      },
-      {
-        path: "/singleblog",
-        element: <SingleBlog />
-      },
-      {
-        path: "/contact",
-        element: <ContactUs />
-      },
-      {
-        path: "/profile",
-        element: <Profile />
-      },
-      {
-        path: "/help",
-        element: <Help/>
-      },
-      {
-        path: "/terms",
-        element: <Terms/>
-      },
-      {
-        path: "/payout",
-        element: <PayOut/>
-      },
+      { path: "/home", element: <Home /> },
+      { path: "/shop", element: <Shop /> },
+      { path: "/about", element: <AboutUs /> },
+      { path: "/singleshop", element: <SingleShop /> },
+      { path: "/services", element: <Services /> },
+      { path: "/cartpage", element: <CartPage /> },
+      { path: "/reviews", element: <Reviews /> },
+      { path: "/faq", element: <Faq /> },
+      { path: "/blog", element: <Blog /> },
+      { path: "/singleblog", element: <SingleBlog /> },
+      { path: "/contact", element: <ContactUs /> },
+      { path: "/profile", element: <Profile /> },
+      { path: "/help", element: <Help /> },
+      { path: "/terms", element: <Terms /> },
+      { path: "/payout", element: <PayOut /> },
 
     ],
   },
 
-
-  {
-    path: "/welcomepage",
-    element: <WelcomePage />
-  },
-  {
-    path: "/welcome2",
-    element: <Welcome2 />
-  },
-  {
-    path: "/welcome3",
-    element: <Welcome3 />
-  },
-  {
-   path: "/signup",
-   element: <Signup/>
-  },
-  {
-    path: "/login",
-    element: <Login />
-  },
-  {
-    path: "/forgotpassword",
-    element: <ForgotPassword />
-  },
-  {
-    path: "/logout",
-    element: <Logout />
-  },
-  {
-    path: "/loader",
-    element: <Loader />
-  },
+  { path: "/welcomepage", element: <WelcomePage /> },
+  { path: "/welcome2", element: <Welcome2 /> },
+  { path: "/welcome3", element: <Welcome3 /> },
+  { path: "/signup", element: <Signup /> },
+  { path: "/login", element: <Login /> },
+  { path: "/forgotpassword", element: <ForgotPassword /> },
+  { path: "/logout", element: <Logout /> },
+  { path: "/loader", element: <Loader /> },
 
 ]);
 

@@ -28,7 +28,7 @@
 
 .hero-subtitle {
     margin-top: -10px;
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: #373a37;
     text-align: justify;
 }
@@ -47,7 +47,7 @@
 }
 
 .star {
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-right: 5px;
 }
 
@@ -60,12 +60,12 @@
 }
 
 .rating-text {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #220d0d;
 }
 
 .customer-count {
-    font-size: 1rem;
+    font-size: 0.5rem;
     font-weight: bold;
     color: #220d0d;
     margin-top: -1rem;
@@ -83,7 +83,7 @@
     padding: 12px 24px;
     font-size: 1.2rem;
     font-weight: bold;
-    border-radius: 0px;
+    border-radius: 10px;
     border: none;
     cursor: pointer;
     transition: background 0.3s ease-in-out;
@@ -212,7 +212,7 @@
     }
 
     .hero-title {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .hero-subtitle {

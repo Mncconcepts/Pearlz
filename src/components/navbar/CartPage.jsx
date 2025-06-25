@@ -67,8 +67,18 @@ const CartPage = () => {
         <h1 className="cart-title">Your Cart</h1>
 
         {cart.length === 0 ? (
-          <p className="empty-cart">Your cart is empty.</p>
+          <div className="empty-cart-container">
+            <img
+              src="/empty cart.png"
+              alt="Empty Cart"
+              className="empty-cart-image"
+            />
+            <Link to="/shop">
+              <button className="empty-cart">Back to Shop!</button>
+            </Link>
+          </div>
         ) : (
+
           <>
             <table className="cart-table">
               <thead>
@@ -135,7 +145,7 @@ const CartPage = () => {
                 </label>
               </div>
               <p className="total">Total: ${total.toFixed(2)}</p>
-              <button className="checkout-btn" onClick={() => setShowPopup(true)}>Checkout</button>
+              <button className="checkout-btn" onClick={() => setShowPopup(true)}>Proceed To Checkout</button>
             </div>
           </>
         )}

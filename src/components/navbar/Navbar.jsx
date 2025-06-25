@@ -170,11 +170,9 @@ const Navbar = () => {
                     )}
                 </div>
                 <div className="icon-container" onClick={() => navigate("/cartpage")}>
-                    <FaHeart className="icon" />
-                    <span className="badge">{cartCount}</span>
+                    <FaShoppingCart className="icon me-2" />
+                    <span className="badge me-2">{cartCount}</span>
                 </div>
-
-                <FaShoppingCart className="icon" onClick={() => navigate("/shop")} />
             </div>
 
             {/* Profile */}

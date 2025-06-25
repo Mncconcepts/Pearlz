@@ -3,6 +3,7 @@ import "./Hero2.css";
 import { Link, useNavigate } from "react-router-dom";
 import Reviews from "../components/navbar/Reviews";
 import Faq from "../components/navbar/Faq";
+import { FaStar } from "react-icons/fa";
 
 const categoryImages = [
   "/phase8.png", "/phase2.png", "/phase3.png", "/phase4.png",
@@ -96,10 +97,10 @@ const Hero2 = () => {
           {productImages.map((image, index) => (
             <div data-aos="fade-up" key={index} className="product-item">
               <img src={image} alt="Product" />
-              <p> Item {index + 1}</p>
-              <span>$XX.XX</span>
-              <div className="ratings">⭐⭐⭐⭐☆</div>
-              <button onClick={() => handleAddToCart({ id: index + 1, name: `Product Name ${index + 1}`, price: "$XX.XX", image })}>View Single</button>
+              <p> Featured {index + 1}</p>
+              <span>$0.00</span>
+              <div> <FaStar className="ratings"></FaStar><FaStar className="ratings"></FaStar>3.5k</div>
+              <button onClick={() => handleAddToCart({ id: index + 1, name: `Product Name ${index + 1}`, price: "$15", image })}>View Single</button>
             </div>
           ))}
         </div>
@@ -121,8 +122,8 @@ const Hero2 = () => {
             <div data-aos="fade-down" key={index} className="product-item">
               <img src={image} alt="Deal" />
               <p>Deal Product {index + 1}</p>
-              <div className="ratings">⭐⭐⭐⭐☆</div>
-              <span>$XX.XX</span>
+              <span>$0.00</span>
+              <div> <FaStar className="ratings"></FaStar><FaStar className="ratings"></FaStar>3.5k</div>
               <button onClick={() => handleAddToCart({ id: index + 100, name: `Deal Product ${index + 1}`, price: "$XX.XX", image })}>View Single</button>
             </div>
           ))}

@@ -93,7 +93,7 @@ const Shop = () => {
                                     className="add-to-cart"
                                     onClick={() => handleViewProduct(product)}
                                 >
-                                    View Single
+                                    View Product
                                 </button>
                             </div>
                         ))}
