@@ -18,7 +18,7 @@ const Blog = () => {
   return (
     <div className="blog-container">
       <div className="banner">
-        <img src="/cover3.png" alt="Blog Banner" />
+        <img src="/cover3.png" alt="Blog Banner" loading="lazy" />
         <div data-aos="" className="banner-text">
           <h1>Blogs</h1>
           <p>Stay updated with the latest articles and insights</p>
@@ -28,7 +28,7 @@ const Blog = () => {
       <div className="featured-posts-grid">
         {blogData.featured.map((post, index) => (
           <div data-aos="fade-up" key={index} className="featured-post">
-            <img src={post.image} alt={post.title} />
+            <img src={post.image} alt={post.title} loading="lazy"/>
             <div className="featured-content">
               <h2>{post.title}</h2>
               <p>{post.date}</p>
@@ -42,7 +42,7 @@ const Blog = () => {
       <div className="posts-grid">
         {currentPosts.map((post, index) => (
           <div key={index} className="post-item">
-            <img src={post.image} alt={post.title} />
+            <img src={post.image} alt={post.title} loading="lazy" />
             <span className="tag">{post.category}</span>
             <h3>{post.title}</h3>
             <p>{post.excerpt}</p>
@@ -70,7 +70,7 @@ const Blog = () => {
         <div className="popular-grid">
           {blogData.popular.map((post, index) => (
             <div key={index} className="popular-item">
-              <img src={post.image} alt={post.title} />
+              <img src={post.image} alt={post.title} loading="lazy" />
               <p>{post.title}</p>
             </div>
           ))}

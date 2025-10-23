@@ -88,7 +88,7 @@ const Services = () => {
         <div className="services-grid">
           {services.map((service, index) => (
             <div key={index} className="service-item">
-              <img data-aos="fade-up" src={service.image} alt={service.title} />
+              <img data-aos="fade-up" src={service.image} alt={service.title} loading="lazy"/>
               <div className="service-info">
                 <span>{service.number}</span>
                 <h3>{service.title}</h3>
@@ -121,10 +121,10 @@ const Services = () => {
         <p>wild range reviews check out the section below</p>
         <div className="before-after-gallery">
           <div data-aos="fade-up" className="before-after-item">
-            <img src="s4.png" alt="Before & After" />
+            <img src="s4.png" alt="Before & After" loading="lazy" />
           </div>
           <div data-aos="fade-up" className="before-after-item">
-            <img src="s2.png" alt="Before & After" />
+            <img src="s2.png" alt="Before & After" loading="lazy" />
           </div>
         </div>
         <Link to="/shop">
