@@ -45,7 +45,6 @@ const Shop = () => {
             </div>
 
             <div className="products-section">
-                <FaArrowLeft className="nav-arrow left" onClick={prevPage} />
                 <div className="products-grid">
                     {paginatedProducts.length > 0 &&
                         paginatedProducts[currentPage].map((product) => (
@@ -58,7 +57,7 @@ const Shop = () => {
                                 <span className="tags">{product.tag}</span> 
 
                                 <div className="product-img-container">
-                                    <img src={product.img} alt={product.name} className="product-img" />
+                                    <img src={product.img} alt={product.name} className="product-img" loading="lazy" />
 
                                     {hoveredProduct === product.id && (
                                         <div className="hover-icons">
@@ -84,7 +83,7 @@ const Shop = () => {
                                     )}
                                 </div>
 
-                                <h4>{product.name}</h4>
+                                <h6>{product.name}</h6>
                                 <p className="price">
                                     {product.price}{" "}
                                     <span className="old-price">{product.oldPrice}</span>
@@ -98,8 +97,10 @@ const Shop = () => {
                             </div>
                         ))}
                 </div>
-                <FaArrowRight className="nav-arrow right" onClick={nextPage} />
+                
             </div>
+            <FaArrowLeft className="nav-arrow left mt-5 me-5" onClick={prevPage} />
+            <FaArrowRight className="nav-arrow right mt-5 ms-5" onClick={nextPage} />
         </div>
     );
 };

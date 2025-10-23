@@ -90,7 +90,7 @@ const SingleShop = () => {
 
       <div className="product-details">
         <div className="product-image">
-          <img src={product.img} alt={product.name} />
+          <img src={product.img} alt={product.name} loading="lazy" />
         </div>
         <div className="product-info">
           <h1>{product.name}</h1>
