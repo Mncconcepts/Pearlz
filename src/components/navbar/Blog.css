@@ -170,7 +170,6 @@
 }
 
 
-/* 🔥 Popular Posts */
 .popular-posts {
   margin-bottom: 40px;
 }
@@ -203,4 +202,161 @@
 
 .popular-item p {
   margin-top: 10px;
+}
+
+
+@media only screen and (min-width: 360px) and (max-width: 430px) {
+  html, body {
+    overflow-x: hidden;
+  }
+
+  .blog-container {
+    padding: 10px;
+  }
+
+  .banner img {
+    height: auto;
+    min-height: 180px;
+    object-fit: contain; 
+    display: block;
+  }
+
+  .banner-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .banner-text p {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+
+  
+  .featured-posts-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .featured-post {
+    padding: 10px;
+  }
+
+  .featured-post img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 6px;
+  }
+
+  .featured-content h2 {
+    font-size: 1rem;
+  }
+
+  .featured-content p {
+    font-size: 0.8rem;
+  }
+
+  
+  .posts-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .post-item {
+    padding: 10px;
+  }
+
+  .post-item img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .post-item h3 {
+    font-size: 1rem;
+  }
+
+  .post-item p {
+    font-size: 0.8rem;
+  }
+
+  
+  .popular-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .popular-item img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 6px;
+  }
+
+  .popular-item p {
+    font-size: 0.85rem;
+  }
+
+
+  .pagination span {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+}
+
+
+@media (max-width: 360px) {
+  html, body {
+    overflow-x: hidden;
+  }
+
+  .featured-posts-grid,
+  .posts-grid,
+  .popular-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .featured-post img,
+  .post-item img,
+  .popular-item img {
+    height: auto;
+    object-fit: contain;
+  }
+
+  .banner img {
+    height: auto;
+  }
+}
+
+/* Extra Fixes for iPhone 13 Pro and Small Mobile Screens */
+@media only screen and (min-device-width: 375px) and (max-device-width: 430px) and (-webkit-min-device-pixel-ratio: 3) {
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .banner img,
+  .featured-post img,
+  .post-item img,
+  .popular-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover !important;
+    display: block;
+    border-radius: 8px;
+  }
+
+  .banner-text h1 {
+    font-size: 1.6rem;
+  }
+
+  .featured-posts-grid,
+  .posts-grid,
+  .popular-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-container {
+    padding: 12px;
+  }
 }

@@ -57,7 +57,7 @@ const Shop = () => {
                                 <span className="tags">{product.tag}</span> 
 
                                 <div className="product-img-container">
-                                    <img src={product.img} alt={product.name} className="product-img" />
+                                    <img src={product.img} alt={product.name} className="product-img"/>
 
                                     {hoveredProduct === product.id && (
                                         <div className="hover-icons">
