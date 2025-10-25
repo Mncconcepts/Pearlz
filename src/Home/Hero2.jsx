@@ -84,7 +84,7 @@ const Hero2 = () => {
         <div data-aos="zoom-in" className="categories">
           {["Concealer", "Cleansers", "Creams", "Brightening", "Foundations", "Suncare", "Serum", "Foundations", "Suncare", "Serum", "Concealer", "Cleansers"].map((category, index) => (
             <div key={index} className="category-item">
-              <img src={categoryImages[index]} alt={category} loading="lazy" />
+              <img src={categoryImages[index]} alt={category} />
               <p>{category}</p>
             </div>
           ))}
@@ -96,7 +96,7 @@ const Hero2 = () => {
         <div className="product-list">
           {productImages.map((image, index) => (
             <div data-aos="fade-up" key={index} className="product-item">
-              <img src={image} alt="Product" loading="lazy" />
+              <img src={image} alt="Product" />
               <p> Featured {index + 1}</p>
               <span>$0.00</span>
               <div> <FaStar className="ratings"></FaStar><FaStar className="ratings"></FaStar>3.5k</div>
@@ -109,7 +109,7 @@ const Hero2 = () => {
       <section className="promotions">
         {promoImages.map((image, index) => (
           <div data-aos="zoom-in" key={index} className="promo-item">
-            <img src={image} alt="Promotion" loading="lazy" />
+            <img src={image} alt="Promotion" />
             <p className="mt-3">{promoTexts[index]}</p>
           </div>
         ))}
@@ -120,7 +120,7 @@ const Hero2 = () => {
         <div className="product-list">
           {dealImages.map((image, index) => (
             <div data-aos="fade-down" key={index} className="product-item">
-              <img src={image} alt="Deal" loading="lazy" />
+              <img src={image} alt="Deal" />
               <p>Deal Product {index + 1}</p>
               <span>$0.00</span>
               <div> <FaStar className="ratings"></FaStar><FaStar className="ratings"></FaStar>3.5k</div>
@@ -146,12 +146,12 @@ const Hero2 = () => {
             <button className="btn">Explore Products</button>
           </Link>
         </div>
-        <img data-aos="fade-up" src="/second1.png" alt="Skincare" className="w-1/2 rounded-lg" loading="lazy" />
+        <img data-aos="fade-up" src="/second1.png" alt="Skincare" className="w-1/2 rounded-lg" />
       </section>
 
       {/* Second Section */}
       <section className="custom-image flex items-center justify-between p-8">
-        <img data-aos="zoom-in" src="/second4.png" alt="Healthy Skin" className="w-1/2 rounded-lg" loading="lazy" />
+        <img data-aos="zoom-in" src="/second4.png" alt="Healthy Skin" className="w-1/2 rounded-lg" />
         <div className="w-1/2 text-right">
           <h2 data-aos="fade-down" className="text-3xl font-bold mb-4">Nourish Your Skin Naturally</h2>
           <p className="mb-4">Our products are crafted with natural ingredients to give your skin the care it deserves, ensuring a healthy and radiant glow.</p>
