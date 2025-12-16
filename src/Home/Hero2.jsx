@@ -81,7 +81,7 @@ const Hero2 = () => {
     <div className="hero-container">
       <section className="shop-categories">
         <h2>Shop By Categories</h2>
-        <divgit className="categories">
+        <div className="categories">
           {["Concealer", "Cleansers", "Creams", "Brightening", "Foundations", "Suncare", "Serum", "Foundations", "Suncare", "Serum", "Concealer", "Cleansers"].map((category, index) => (
             <div key={index} className="category-item">
               <img src={categoryImages[index]} alt={category} />
@@ -223,4 +223,4 @@ const Hero2 = () => {
   );
 };
 
-export default Hero2
+export default Hero2;
