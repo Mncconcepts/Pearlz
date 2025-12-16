@@ -101,7 +101,6 @@ const Navbar = () => {
 
     return (
         <nav className="navbar">
-            {/* Logo Section */}
             <Link to="/home" className="unstyled-link">
                 <div className="logo">Pearlz.</div>
             </Link>

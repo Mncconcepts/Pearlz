@@ -48,7 +48,7 @@ const Shop = () => {
                 <div className="products-grid">
                     {paginatedProducts.length > 0 &&
                         paginatedProducts[currentPage].map((product) => (
-                            <div data-aos="fade-up"
+                            <div
                                 key={product.id}
                                 className="product-card"
                                 onMouseEnter={() => setHoveredProduct(product.id)}

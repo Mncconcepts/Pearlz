@@ -88,7 +88,7 @@ const Services = () => {
         <div className="services-grid">
           {services.map((service, index) => (
             <div key={index} className="service-item">
-              <img data-aos="fade-up" src={service.image} alt={service.title} loading="lazy"/>
+              <img src={service.image} alt={service.title} loading="lazy"/>
               <div className="service-info">
                 <span>{service.number}</span>
                 <h3>{service.title}</h3>
@@ -99,7 +99,7 @@ const Services = () => {
       </section>
 
       <section className="dermatology">
-        <div data-aos="zoom-in" className="dermatology-content">
+        <div className="dermatology-content">
           <h3>ADVANCING THE FIELD OF DERMATOLOGY</h3>
           <p>With our quality skin care product, designed for better fast effect.</p>
           <button onClick={togglePopup}>BOOK APPOINTMENT</button>
@@ -117,14 +117,14 @@ const Services = () => {
       </section>
 
       <section className="before-after">
-        <h3 data-aos="fade-down">BEFORE & AFTER TREATMENT</h3>
+        <h3>BEFORE & AFTER TREATMENT</h3>
         <p>wild range reviews check out the section below</p>
         <div className="before-after-gallery">
-          <div data-aos="fade-up" className="before-after-item">
-            <img src="s4.png" alt="Before & After" loading="lazy" />
+          <div className="before-after-item">
+            <img src="/s4.png" alt="" />
           </div>
-          <div data-aos="fade-up" className="before-after-item">
-            <img src="s2.png" alt="Before & After" loading="lazy" />
+          <div className="before-after-item">
+            <img src="/s2.png" alt="" />
           </div>
         </div>
         <Link to="/shop">
@@ -133,7 +133,7 @@ const Services = () => {
       </section>
 
       <section className="dermatologyy bg-light">
-        <div data-aos="zoom-in" className="dermatologyy-content">
+        <div className="dermatologyy-content">
           <h3>Want A Preffered Skin Care Product?</h3>
           <p>
             We have quality skin care product, designed for better fast effect, reach us out.

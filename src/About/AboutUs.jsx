@@ -63,18 +63,18 @@ const About = () => {
     return (
         <div className="aboutt-container">
             <section className="heroe-section">
-                <h1 data-aos="fade-right" className="">About Us</h1>
+                <h1 className="">About Us</h1>
                 <p>
                     <span>HOME / ABOUT</span>
                 </p>
             </section>
 
             <section className="about-content">
-                <div data-aos="fade-down" className="image-container">
+                <div className="image-container">
                     <img src={profileImage} alt="Profile" />
                 </div>
                 <div className="text-container">
-                    <h3 data-aos="fade-down" className="mt-5">ABOUT PEARLZ</h3>
+                    <h3 className="mt-5">ABOUT PEARLZ</h3>
                     <h2>We Sell Top Skin Care Products</h2>
                     <span> <p>
                         At PEARLZ store, we are dedicated to providing top-quality skincare services
@@ -100,12 +100,12 @@ const About = () => {
             </section>
 
             <section className="why-choose-us bg-light">
-                <div data-aos="fade-down" className="">
+                <div className="">
                     <h3>WHY CHOOSE US ?</h3>
                     <h2>Beauty Is Power, A Smile Is Its Sword</h2>
                 </div>
 
-                <div data-aos="zoom-in" className="features">
+                <div className="features">
                     <div className="feature-box">100% Organic</div>
                     <div className="feature-box">Improve Health</div>
                     <div className="feature-box">Biological Safe</div>
@@ -118,7 +118,7 @@ const About = () => {
             <Faq />
 
             <section className="reviews">
-                <div data-aos="fade-down" className="review-images">
+                <div className="review-images">
                     <img src={ratingImage} alt="Reviews" />
                 </div>
                 <div className="text-container">
@@ -130,7 +130,7 @@ const About = () => {
                     </Link>
                 </div>
                 <div className="newsletter">
-                    <div data-aos="fade-down" className="newsletter-card">
+                    <div className="newsletter-card">
                         <h3>STAY UPDATED</h3>
                         <h2>Subscribe to Our Newsletter</h2>
                         <p>Get the latest updates, skincare tips, and exclusive offers delivered straight to your inbox.</p>

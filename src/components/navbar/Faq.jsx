@@ -50,7 +50,7 @@ const Faq = () => {
   return (
     <div className="faq-section">
       <div className="faq-container">
-        <div data-aos="zoom-in" className="faq-questions">
+        <div className="faq-questions">
           <h2 className="faq-title">Frequently Asked Questions</h2>
           {faqs.map((faq, index) => (
             <div

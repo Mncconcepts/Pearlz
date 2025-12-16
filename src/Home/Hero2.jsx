@@ -80,8 +80,8 @@ const Hero2 = () => {
   return (
     <div className="hero-container">
       <section className="shop-categories">
-        <h2 data-aos="fade-down">Shop By Categories</h2>
-        <div data-aos="zoom-in" className="categories">
+        <h2>Shop By Categories</h2>
+        <divgit className="categories">
           {["Concealer", "Cleansers", "Creams", "Brightening", "Foundations", "Suncare", "Serum", "Foundations", "Suncare", "Serum", "Concealer", "Cleansers"].map((category, index) => (
             <div key={index} className="category-item">
               <img src={categoryImages[index]} alt={category} />
@@ -92,10 +92,10 @@ const Hero2 = () => {
       </section>
 
       <section className="popular-products">
-        <h2 data-aos="fade-down">Popular On The Pearlz Store.</h2>
+        <h2>Popular On The Pearlz Store.</h2>
         <div className="product-list">
           {productImages.map((image, index) => (
-            <div data-aos="fade-up" key={index} className="product-item">
+            <div key={index} className="product-item">
               <img src={image} alt="Product" />
               <p> Featured {index + 1}</p>
               <span>$0.00</span>
@@ -108,7 +108,7 @@ const Hero2 = () => {
 
       <section className="promotions">
         {promoImages.map((image, index) => (
-          <div data-aos="zoom-in" key={index} className="promo-item">
+          <div key={index} className="promo-item">
             <img src={image} alt="Promotion" />
             <p className="mt-3">{promoTexts[index]}</p>
           </div>
@@ -116,10 +116,10 @@ const Hero2 = () => {
       </section>
 
       <section className="best-deals">
-        <h2 data-aos="fade-down">Best Deals On The Pearlz Store.</h2>
+        <h2>Best Deals On The Pearlz Store.</h2>
         <div className="product-list">
           {dealImages.map((image, index) => (
-            <div data-aos="fade-down" key={index} className="product-item">
+            <div key={index} className="product-item">
               <img src={image} alt="Deal" />
               <p>Deal Product {index + 1}</p>
               <span>$0.00</span>
@@ -140,20 +140,20 @@ const Hero2 = () => {
 
       <section className="custom-image flex items-center justify-between p-8">
         <div className="w-1/2">
-          <h2 data-aos="fade-down" className="text-3xl font-bold mb-4">Discover Your Perfect Skincare Routine</h2>
+          <h2 className="text-3xl font-bold mb-4">Discover Your Perfect Skincare Routine</h2>
           <p className="mb-4">We specialize in understanding your unique skin type and providing personalized skincare treatments to enhance your natural beauty.</p>
           <Link to="/shop">
             <button className="btn">Explore Products</button>
           </Link>
         </div>
-        <img data-aos="fade-up" src="/second1.png" alt="Skincare" className="w-1/2 rounded-lg" />
+        <img src="/second1.png" alt="Skincare" className="w-1/2 rounded-lg" />
       </section>
 
       {/* Second Section */}
       <section className="custom-image flex items-center justify-between p-8">
-        <img data-aos="zoom-in" src="/second4.png" alt="Healthy Skin" className="w-1/2 rounded-lg" />
+        <img src="/second4.png" alt="Healthy Skin" className="w-1/2 rounded-lg" />
         <div className="w-1/2 text-right">
-          <h2 data-aos="fade-down" className="text-3xl font-bold mb-4">Nourish Your Skin Naturally</h2>
+          <h2 className="text-3xl font-bold mb-4">Nourish Your Skin Naturally</h2>
           <p className="mb-4">Our products are crafted with natural ingredients to give your skin the care it deserves, ensuring a healthy and radiant glow.</p>
           <Link to="/shop">
             <button className="btn">View Collection</button>
@@ -223,4 +223,4 @@ const Hero2 = () => {
   );
 };
 
-export default Hero2;
+export default Hero2

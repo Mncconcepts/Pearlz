@@ -172,7 +172,7 @@
     font-size: 0.8rem;
     padding: 3px 7px;
     border-radius: 3px;
-    z-index: 9999;
+    z-index: 999;
 }
 
 .price {
@@ -389,41 +389,3 @@
     }
 }
 
-/* ✅ Fix overflow and scaling for iPhone 13 Pro and similar devices */
-@media only screen and (max-width: 390px) {
-  html, body {
-    overflow-x: hidden;
-    width: 100%;
-  }
-
-  .hero-container,
-  .product-list,
-  .promotions,
-  .categories,
-  .custom-image,
-  .contact-form {
-    max-width: 100%;
-    overflow-x: hidden;
-    margin: 0 auto;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  /* Slightly reduce image & card sizes for tight width */
-  .product-item,
-  .promo-item {
-    width: 90%;
-    max-width: 160px;
-    margin: 0 auto;
-  }
-
-  .product-item img,
-  .promo-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 6px;
-  }
-}

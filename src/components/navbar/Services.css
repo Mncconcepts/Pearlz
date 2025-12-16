@@ -1,503 +1,341 @@
 .services-container {
-    background: #fdfdfd;
-    color: #333;
-    padding-bottom: 50px;
+  background: #fdfdfd;
+  color: #333;
+  padding-bottom: 50px;
 }
 
 .hero {
-    text-align: center;
-    background: url('/cover3.png') center/cover;
-    padding: 80px 20px;
-    color: #1b1a1a;
-    margin-top: 2rem;
+  text-align: center;
+  background: url('/cover3.png') center/cover no-repeat;
+  padding: 80px 20px;
+  color: #1b1a1a;
+  margin-top: 2rem;
 }
 
 .hero h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-top: 3rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 3rem;
 }
 
 .hero p {
-    font-size: 1.1rem;
-    opacity: 0.8;
+  font-size: 1.1rem;
+  opacity: 0.8;
 }
 
 .comprehensive-services {
-    text-align: center;
-    padding: 50px 20px;
+  text-align: center;
+  padding: 50px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .comprehensive-services h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.comprehensive-services {
-    text-align: center;
-    padding: 50px 20px;
-    max-width: 1000px;
-    margin: 0 auto;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .comprehensive-services p {
-    padding: 2rem;
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #333;
-    max-width: 800px;
-    margin: 0 auto;
-    align-items: center;
-    text-align: center;
-
+  padding: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
 }
 
 .services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    padding: 30px;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 30px;
+  justify-content: center;
 }
 
 .service-item {
-    position: relative;
-    overflow: hidden;
-    border-radius: 15px;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
 }
 
 .service-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 15px;
-    transition: transform 0.3s ease-in-out;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 15px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .service-info {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
-    text-align: left;
-    transform: translateY(100%);
-    transition: transform 0.3s ease-in-out;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  text-align: left;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 .service-item:hover img {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .service-item:hover .service-info {
-    transform: translateY(0);
+  transform: translateY(0);
 }
 
 .service-info span {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #ffcc00;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffcc00;
 }
 
 .service-info h3 {
-    font-size: 1.5rem;
-    margin: 5px 0;
+  font-size: 1.5rem;
+  margin: 5px 0;
 }
 
+/* Dermatology Section */
 .dermatology {
-    position: relative;
-    padding: 50px 20px;
-    text-align: center;
-    margin-top: 3rem;
-    color: white;
-    background: url(/s3.png) center/cover no-repeat;
+  position: relative;
+  padding: 50px 20px;
+  text-align: center;
+  margin-top: 3rem;
+  color: white;
+  background: url(/s3.png) center/cover no-repeat;
 }
 
 .dermatology::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); 
-    z-index: 1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
 .dermatology-content {
-    position: relative;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .dermatology-content h3 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .dermatology-content p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
 }
 
 .dermatologyy {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 20px;
-    color: rgb(41, 39, 39);
-    text-align: center;
-    margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  color: rgb(41, 39, 39);
+  text-align: center;
+  margin-top: 5rem;
 }
 
 .dermatologyy-content {
-    max-width: 600px;
-    margin-top: 4rem;
+  max-width: 600px;
+  margin-top: 4rem;
 }
 
 .dermatologyy-content h3 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .dermatologyy-content p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
 }
 
 .dermatologyy-content button {
-    background: #2eaac0;
-    border: none;
-    padding: 12px 24px;
-    font-size: 1.3rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-    border-radius: 5px;
-    color: #fff;
+  background: #2eaac0;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 5px;
+  color: #fff;
 }
 
 .dermatologyy-content button:hover {
-    background: #78cce0;
-    color: #fff;
+  background: #78cce0;
+  color: #fff;
 }
 
-
 .dermatology-content ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .dermatology-content li {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .dermatology-content button {
-    background: #8e44ad;
-    color: #ffff;
-    border: none;
-    padding: 12px 24px;
-    font-size: 1.3rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-    border-radius: 5px;
+  background: #8e44ad;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 5px;
 }
 
 .dermatology-content button:hover {
-    background: #a35ac2;
+  background: #a35ac2;
 }
 
-
+/* Stats Section */
 .stats {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    padding: 50px;
-    text-align: center;
-    background: #f4f4f4;
-    flex-wrap: wrap;
-    margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 50px;
+  text-align: center;
+  background: #f4f4f4;
+  flex-wrap: wrap;
+  margin-top: 4rem;
 }
 
 .stat-item h4 {
-    font-size: 2.2rem;
-    font-weight: bold;
-    color: #8e44ad;
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #8e44ad;
 }
 
 .stat-item p {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
 }
 
+/* Before & After Section */
 .before-after {
-    text-align: center;
-    padding: 50px 20px;
-    margin-top: 6rem;
+  text-align: center;
+  padding: 50px 20px;
+  margin-top: 6rem;
 }
 
 .before-after-gallery {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
 }
 
 .before-after-item img {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 10px;
-    transition: transform 0.3s;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  transition: transform 0.3s;
 }
 
 .before-after-item img:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .before-after button {
-    background: #2c943e;
-    border: none;
-    padding: 12px 24px;
-    font-size: 1.3rem;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-    border-radius: 5px;
-    margin-top: 20px;
+  background: #2c943e;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.3rem;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 5px;
+  margin-top: 20px;
 }
 
 .before-after button:hover {
-    background: #4dcf63;
+  background: #4dcf63;
 }
 
-@media (max-width: 768px) {
-    .hero {
-        padding: 60px 15px;
-    }
-
-    .hero h1 {
-        font-size: 1.8rem;
-        margin-top: 2rem;
-    }
-
-    .hero p {
-        font-size: 0.9rem;
-    }
-
-    .comprehensive-services {
-        padding: 30px 15px;
-    }
-
-    .comprehensive-services h2 {
-        font-size: 1.6rem;
-    }
-
-    .services-grid {
-        padding: 20px;
-    }
-
-    .stats {
-        padding: 30px 15px;
-    }
-
-    .stat-item h4 {
-        font-size: 1.8rem;
-    }
-
-    .stat-item p {
-        font-size: 1.1rem;
-    }
-
-    .dermatology {
-        padding: 30px 15px;
-        flex-direction: column;
-    }
-
-    .dermatology-content h3 {
-        font-size: 1.6rem;
-    }
-
-    .dermatology-content p {
-        font-size: 0.9rem;
-    }
-
-    .before-after {
-        padding: 30px 15px;
-    }
-
-    .before-after button {
-        font-size: 1.1rem;
-        padding: 10px 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero {
-        padding: 50px 10px;
-    }
-
-    .hero h1 {
-        font-size: 2rem;
-        letter-spacing: 1px;
-        font-weight: bold;
-    }
-
-    .hero p {
-        font-size: 0.8rem;
-    }
-
-    .services-grid {
-        gap: 10px;
-        padding: 10px;
-    }
-
-    .service-info span,
-    .service-info h3 {
-        font-size: 1.5rem;
-    }
-
-    .dermatology {
-        padding: 20px 10px;
-    }
-
-    .dermatology-content h3 {
-        font-size: 1.3rem;
-    }
-
-    .dermatology-content p {
-        font-size: 1rem;
-    }
-
-    .dermatologyy-content p {
-        font-size: small;
-    }
-
-    .dermatology-content button {
-        font-size: 0.9rem;
-        padding: 10px 18px;
-    }
-
-    .stats {
-        padding: 20px 10px;
-        gap: 10px;
-    }
-
-    .stat-item h4 {
-        font-size: 1.5rem;
-    }
-
-    .stat-item p {
-        font-size: 1rem;
-    }
-
-    .before-after {
-        padding: 20px 10px;
-    }
-
-    .before-after h3 {
-        font-weight: bold;
-        font-size: 2rem;
-    }
-
-    .before-after p {
-        font-size: small;
-    }
-
-    .before-after button {
-        font-size: 1rem;
-        padding: 12px 80px;
-    }
-
-    .comprehensive-services p {
-        text-align: center;
-        align-items: center;
-        line-height: 2rem;
-        text-align: justify;
-        font-size: small;
-    }
-
-    .comprehensive-services h2 {
-        text-align: center;
-        font-size: 1.5rem;
-        margin-top: 2rem;
-    }
-}
-
+/* Popup */
 .popup-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-}
-.popup-card .btn{
-    background-color: #2c943e;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
 }
 
 .popup-card {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    width: 350px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    animation: fadeIn 0.3s ease-in-out;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 350px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.3s ease-in-out;
 }
 
-.popup-card h2 {
-    margin-bottom: 10px;
-}
-
-.popup-card p {
-    margin-bottom: 15px;
+.popup-card .btn {
+  background-color: #2c943e;
 }
 
 .popup-card button {
-    padding: 8px 15px;
-    background: #66717c;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
+  padding: 8px 15px;
+  background: #66717c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 .popup-card button:hover {
-    background: #0056b3;
+  background: #0056b3;
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

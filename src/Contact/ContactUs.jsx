@@ -29,7 +29,7 @@ const ContactUs = () => {
             </div>
 
             <div className="contact-content">
-                <div data-aos="fade-down" className="contact-info">
+                <div className="contact-info">
                     <h2>Don't Hesitate to Contact Us</h2>
                     <p>Need Help? Reach us out now we are eager to hear from you</p>
                     <div className="contact-details">
@@ -67,7 +67,7 @@ const ContactUs = () => {
                     </div>
                 </div>
 
-                <div data-aos="zoom-in" className="contact-formm">
+                <div className="contact-formm">
                     <form onSubmit={handleSubmit}>
                         <input type="text" placeholder="Full Name" required />
                         <input type="email" placeholder="Your Email" required />

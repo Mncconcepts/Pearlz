@@ -30,13 +30,13 @@ const Help = () => {
 
     return (
         <div className="helps-section">
-            <div data-aos="fade-left" className="helps-header">
+            <div className="helps-header">
                 <h3>Need help?</h3>
                 <p>We are always here for you. Reach out to us anytime</p>
             </div>
 
             <div className="helps-cards">
-                <div data-aos="fade-up" className="helps-card">
+                <div className="helps-card">
                     <div className="helps-image">
                         <img src="/s6.png" alt="Customer Support" />
                     </div>
@@ -57,7 +57,7 @@ const Help = () => {
                 </div>
 
                 {/* Ticket Support */}
-                <div data-aos="fade-up" className="helps-card">
+                <div className="helps-card">
                     <div className="helps-content">
                         <h4>Ticket Support</h4>
                         <p> If you are facing a complex issue that requires in-depth assistance,
@@ -75,7 +75,7 @@ const Help = () => {
                 </div>
 
                 {/* FAQ */}
-                <div data-aos="fade-up" className="helps-card">
+                <div className="helps-card">
                     <div className="helps-image">
                         <img src="/blog6.png" alt="FAQ" />
                     </div>

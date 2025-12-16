@@ -1,6 +1,6 @@
 :root {
   --primary-color: #4caf50;
-  --secondary-color: #99d9dd3a;
+  --secondary-color: #eceeee3a;
   --text-color: #333;
 }
 
@@ -49,12 +49,14 @@
   object-fit: contain;
   border-radius: 8px;
   transition: transform 0.3s ease;
+  display: block;
 }
 
 .category-item p {
   margin-top: 8px;
   font-size: 0.9rem;
   transition: color 0.3s ease;
+  color: var(--text-color);
 }
 
 @media (max-width: 768px) {
@@ -97,12 +99,6 @@
   background: rgba(0, 0, 0, 0.1);
 }
 
-.category-item p {
-  margin-top: 8px;
-  font-size: 0.9rem;
-  color: var(--text-color);
-}
-
 .hero-banner {
   position: relative;
   text-align: center;
@@ -114,6 +110,7 @@
   max-height: 400px;
   object-fit: cover;
   border-radius: 10px;
+  display: block;
 }
 
 .hero-text {
@@ -174,7 +171,9 @@
 
 .product-item img {
   width: 100%;
+  height: auto;
   border-radius: 5px;
+  display: block;
 }
 
 .product-item p {
@@ -226,6 +225,7 @@
   object-fit: cover;
   border-radius: 8px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;
 }
 
 .best-deals h2 {
@@ -248,103 +248,17 @@
   margin-bottom: 10px;
 }
 
-.custom-skincare button:hover {
-  background: #388e3c;
-  color: #fff;
-}
-
 .custom-skincare p {
   font-size: 1rem;
   margin-bottom: 20px;
 }
 
-@media (max-width: 768px) {
-  .categories {
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .hero-text {
-    width: 90%;
-    padding: 15px;
-  }
-
-  .hero-text h1 {
-    font-size: 2rem;
-  }
-
-  .hero-text p {
-    font-size: 0.9rem;
-  }
-
-  .product-list {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .promotions {
-    grid-template-columns: 1fr;
-  }
-
-  .product-item {
-    width: 90%;
-  }
+.custom-skincare button:hover {
+  background: #388e3c;
+  color: #fff;
 }
 
-
-@media (max-width: 480px) {
-
-  .shop-categories h2,
-  .popular-products h2,
-  .best-deals h2 {
-    font-size: 2rem;
-  }
-
-  .category-item img {
-    width: 80px;
-    height: 80px;
-  }
-
-  .hero-banner img {
-    max-height: 300px;
-  }
-
-  .hero-text {
-    padding: 10px;
-  }
-
-  .hero-text h1 {
-    font-size: 1.8rem;
-  }
-
-  .hero-text p {
-    font-size: 0.8rem;
-  }
-
-  .product-item {
-    width: 100%;
-    max-width: 320px;
-  }
-
-  .promo-item img {
-    width: 100%;
-    height: auto;
-  }
-
-  .custom-skincare {
-    padding: 20px;
-  }
-
-  .custom-skincare h2 {
-    font-size: 1.5rem;
-  }
-
-  .custom-skincare p {
-    font-size: 0.9rem;
-  }
-}
-
-
+/* Popup */
 .popup-overlay {
   position: fixed;
   top: 0;
@@ -352,8 +266,8 @@
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(8px); 
-  z-index: 999; 
+  backdrop-filter: blur(8px);
+  z-index: 999;
 }
 
 .popup-card {
@@ -367,7 +281,7 @@
   border-radius: 16px;
   color: #fff;
   text-align: center;
-  z-index: 9999; 
+  z-index: 9999;
 }
 
 .popup-image {
@@ -375,6 +289,7 @@
   height: auto;
   border-radius: 12px;
   margin-bottom: 15px;
+  display: block;
 }
 
 .popup-actions {
@@ -411,9 +326,9 @@
 .popup-btn.back:hover {
   text-decoration: none;
   color: #fff;
-
 }
 
+/* Custom Image Section */
 .custom-image {
   display: flex;
   align-items: center;
@@ -435,6 +350,7 @@
   height: auto;
   border-radius: 12px;
   object-fit: cover;
+  display: block;
 }
 
 .custom-image div {
@@ -454,24 +370,9 @@
   margin-bottom: 16px;
 }
 
-.btn {
-  background-color: #388e3c;
-  color: #fff;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-  background-color: #388e3c;
-  color: #fff;
-}
-
-
+/* Contact Form */
 .contact-form {
-  background: url(/hero2.jpg);
+  background: url("./hero2.jpg") center/cover no-repeat;
   border-radius: 16px;
   margin-bottom: 40px;
   gap: 40px;
@@ -503,21 +404,6 @@
   box-shadow: 0 0 5px rgba(255, 127, 80, 0.5);
 }
 
-.btn {
-  background-color: #388e3c;
-  color: #fff;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-  background-color: #2fb436;
-  color: #fff;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
   .custom-image {
@@ -530,122 +416,77 @@
     width: 100%;
   }
 
-  .custom-image div {
-    text-align: center;
-  }
-
   .contact-form {
     flex-direction: column;
     text-align: center;
+    background-size: cover;
+    background-position: center;
   }
 
-  .contact-form div {
-    width: 100%;
-  }
-
-  .contact-form .get {
-    width: 100%;
-  }
-}
-
-/* ✅ Small screen (tablets and below 768px) */
-@media (max-width: 768px) {
-  /* Product grid - display in 2 rows */
   .product-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
-    justify-content: center;
   }
 
-  .product-item {
-    width: 100%;
-    max-width: 250px;
-  }
-
-  .product-item img {
-    width: 100%;
-    height: auto;
-  }
-
-  /* Deal images (promotions) - display 2 per row */
   .promotions {
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
   }
-
-  .promo-item img {
-    width: 100%;
-    height: auto;
-  }
 }
 
-/* ✅ Extra small screens (phones and below 480px) */
+/* Extra small screens */
 @media (max-width: 480px) {
-  /* Products */
   .product-list {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
 
-  .product-item {
-    max-width: 160px;
-    padding: 10px;
-  }
-
+  .promo-item img,
   .product-item img {
     width: 100%;
     height: auto;
-  }
-
-  /* Deals */
-  .promotions {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-  }
-
-  .promo-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 6px;
+    display: block;
   }
 }
 
-
 @media only screen and (max-width: 390px) {
-  html, body {
-    overflow-x: hidden;
-    width: 100%;
-  }
-
-  .hero-container,
-  .product-list,
-  .promotions,
-  .categories,
-  .custom-image,
-  .contact-form {
-    max-width: 100%;
-    overflow-x: hidden;
-    margin: 0 auto;
-  }
-
   img {
     max-width: 100%;
     height: auto;
+    display: block;
   }
 
-  
   .product-item,
   .promo-item {
     width: 90%;
     max-width: 160px;
     margin: 0 auto;
   }
+}
+.custom-image {
+  display: flex;
+  gap: 2rem;
+}
 
-  .product-item img,
-  .promo-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 6px;
+@media (max-width: 768px) {
+  .custom-image {
+    flex-direction: column;
+  }
+
+  .custom-image img,
+  .custom-image > div {
+    width: 100% !important;
   }
 }
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+ .categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
