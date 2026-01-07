@@ -42,7 +42,6 @@ function App() {
   }, [location.pathname]);
 
   useEffect(() => {
-    // Skip loader for WelcomePage
     if (isWelcomePage) {
       setLoading(false);
       return;

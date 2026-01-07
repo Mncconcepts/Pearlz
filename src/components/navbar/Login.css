@@ -41,6 +41,7 @@
 
 .form-header img {
   width: 90px;
+  margin-left: 6rem;
   height: 90px;
   margin-bottom: 16px;
   animation: slideIn 1s ease-out, waveHand 1.5s infinite ease-in-out;
