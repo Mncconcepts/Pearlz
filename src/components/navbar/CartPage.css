@@ -10,8 +10,8 @@
 }
 
 .cart-content {
-    width: 90%;
-    max-width: 1340px;
+    width: 100%;
+    max-width: 1250px;
 }
 
 .empty-cart-container {

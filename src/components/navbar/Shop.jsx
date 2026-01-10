@@ -40,8 +40,6 @@ const Shop = () => {
     return (
         <div className="shop-container">
             <div className="heroo-section">
-                <h2 className="mt-2">Summer Offer 2025 Collection <br />Best Offer</h2>
-                <button className="shop-now">Shop Now</button>
             </div>
 
             <div className="products-section">

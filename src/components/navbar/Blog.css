@@ -1,5 +1,5 @@
 .blog-container {
-  max-width: 1200px;
+  max-width: 1250px;
   margin: 0 auto;
   padding: 20px;
   color: #333;
@@ -75,7 +75,9 @@
 }
 
 .featured-content h2 {
-  font-size: 20px;
+  font-size: 13px;
+  line-height: 1.3rem;
+  font-weight: 400;
   margin: 10px 0;
 }
 
@@ -140,11 +142,13 @@
 
 .post-item h3 {
   margin: 10px 0;
-  font-size: 18px;
+  font-size: 13px;
+  font-weight: 700;
+  margin-top: 1rem;
 }
 
 .post-item p {
-  font-size: 14px;
+  font-size: 12px;
   color: #555;
 }
 

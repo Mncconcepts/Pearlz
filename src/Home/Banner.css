@@ -5,8 +5,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: url("/hero3.png") no-repeat center/cover;
-    color: white;
+    background:
+        linear-gradient(rgba(254, 254, 255, 0.747),
+            rgba(249, 253, 255, 0.726)),
+        url(/hero3.png);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     padding: 0 5%;
     gap: 20px;
 }
@@ -28,9 +34,11 @@
 
 .hero-subtitle {
     margin-top: -10px;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+    line-height: 1.4rem;
     color: #373a37;
     text-align: justify;
+    font-weight: 400;
 }
 
 .hero-ratings {
@@ -80,9 +88,9 @@
     margin-top: 20px;
     background-color: #299eb3;
     color: #ffffff;
-    padding: 12px 24px;
-    font-size: 1.2rem;
-    font-weight: bold;
+    padding: 9px 30px;
+    font-size: 1rem;
+    font-weight: 400;
     border-radius: 10px;
     border: none;
     cursor: pointer;
@@ -115,8 +123,8 @@
 }
 
 .profilee-images img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     border: 2px solid white;
     margin-left: -10px;
